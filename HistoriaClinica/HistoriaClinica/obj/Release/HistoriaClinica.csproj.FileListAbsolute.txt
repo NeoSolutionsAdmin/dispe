@@ -1,0 +1,5 @@
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\HistoriaClinica.dll
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\HistoriaClinica.pdb
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Release\HistoriaClinica.csprojResolveAssemblyReference.cache
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Release\HistoriaClinica.dll
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Release\HistoriaClinica.pdb

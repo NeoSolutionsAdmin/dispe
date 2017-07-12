@@ -1,0 +1,5 @@
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Turnero.dll
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Turnero.pdb
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.csprojResolveAssemblyReference.cache
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.dll
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.pdb

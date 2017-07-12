@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{159B0317-18AF-41B6-B872-3E9D1A790D60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConnectionDispensario</RootNamespace>
+    <AssemblyName>ConnectionDispensario</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke, Version=9.0.0.1002, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\bin\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexiones\Con_AntecedentesPatologicosFamiliares.cs" />
+    <Compile Include="Conexiones\Con_AntecedentesAlergicos.cs" />
+    <Compile Include="Conexiones\Con_CIE.cs" />
+    <Compile Include="Conexiones\Con_Historial.cs" />
+    <Compile Include="Conexiones\Con_ObraSocial.cs" />
+    <Compile Include="Conexiones\Con_Pacientes.cs" />
+    <Compile Include="Conexiones\Con_Turno.cs" />
+    <Compile Include="Conexiones\Con_AntecedentesQuirurgicos.cs" />
+    <Compile Include="Conexiones\Con_AntecedentesPatologicosPersonales.cs" />
+    <Compile Include="Conexiones\Con_Medicacion.cs" />
+    <Compile Include="Conexiones\TableAdapterManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DispensarioACDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispensarioACDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Alergia.cs" />
+    <Compile Include="Modelos\Cirugia.cs" />
+    <Compile Include="Modelos\APF.cs" />
+    <Compile Include="Modelos\APP.cs" />
+    <Compile Include="Modelos\Medicacion.cs" />
+    <Compile Include="Modelos\Historial.cs" />
+    <Compile Include="Modelos\ObraSocial.cs" />
+    <Compile Include="Modelos\Paciente.cs" />
+    <Compile Include="Modelos\Turno.cs" />
+    <Compile Include="Modelos\CIE.cs" />
+    <Compile Include="Modelos\Ubber\SuperInterface.cs" />
+    <Compile Include="Modelos\Ubber\SuperModelo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Statics\LogCatcher.cs" />
+    <Compile Include="Utils\Conversiones.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\Portals\_default\portal.css">
+      <Link>portal.css</Link>
+    </Content>
+    <Content Include="module.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DispensarioACDataSet.xsc">
+      <DependentUpon>DispensarioACDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DispensarioACDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispensarioACDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DispensarioACDataSet.xss">
+      <DependentUpon>DispensarioACDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /Y "$(ProjectDir)*.*" "$(ProjectDir)..\..\..\$(ProjectName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

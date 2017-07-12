@@ -1,0 +1,15 @@
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Pacientes.dll
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Pacientes.pdb
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.dll
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.pdb
+C:\Dispensario Arroyo Cabral\bin\Pacientes.dll
+C:\Dispensario Arroyo Cabral\bin\Pacientes.pdb
+C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.csprojResolveAssemblyReference.cache
+C:\Dispensario Arroyo Cabral\bin\module.css
+C:\Dispensario Arroyo Cabral\bin\cancelpaciente.png
+C:\Dispensario Arroyo Cabral\bin\deletepaciente.png
+C:\Dispensario Arroyo Cabral\bin\editpaciente.png
+C:\Dispensario Arroyo Cabral\bin\newpaciente.png
+C:\Dispensario Arroyo Cabral\bin\savepaciente.png
+C:\Dispensario Arroyo Cabral\bin\searchpaciente.png
+C:\Dispensario Arroyo Cabral\bin\uploadpaciente.png

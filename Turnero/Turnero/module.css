@@ -1,0 +1,35 @@
+.TablaTurnos {
+    width:100%;
+    font-size:10px;
+
+}
+
+    .TablaTurnos tbody tr {
+        border-bottom:solid;
+        border-width:1px;
+        border-color:#808080
+    }
+
+.NonDataCell {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	min-width: 20px;
+	display: block;
+	min-height: 20px;
+}
+.CLSEspera {
+    background-color:#88d0e8;
+}
+.CLSProgreso {
+    background-color:#7bf3b8;
+}
+
+.CLSCancelado {
+    background-color:#ff80a3;
+}
+
+.CLSFinalizado {
+    background-color:#fffa97;
+}
+
