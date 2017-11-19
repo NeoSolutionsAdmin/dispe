@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balanza Lite", "Balanza Lite\Balanza Lite.csproj", "{B4982E0F-443A-4683-99AD-9478B50C843D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{A8AA51B5-63FE-4AB1-9807-8DA7F16AE2CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4982E0F-443A-4683-99AD-9478B50C843D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4982E0F-443A-4683-99AD-9478B50C843D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4982E0F-443A-4683-99AD-9478B50C843D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4982E0F-443A-4683-99AD-9478B50C843D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8AA51B5-63FE-4AB1-9807-8DA7F16AE2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AA51B5-63FE-4AB1-9807-8DA7F16AE2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AA51B5-63FE-4AB1-9807-8DA7F16AE2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8AA51B5-63FE-4AB1-9807-8DA7F16AE2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\Pesos.accdb
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\Balanza Lite.exe.config
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\Balanza Lite.exe
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\Balanza Lite.pdb
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\Clases.dll
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\System.Data.dll
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\bin\Debug\Clases.pdb
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.csprojResolveAssemblyReference.cache
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.MainForm.resources
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.Properties.Resources.resources
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.csproj.GenerateResource.Cache
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.exe
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.pdb
+C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.frmPassword.resources
