@@ -1,6 +1,16 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="View.ascx.cs" Inherits="Christoc.Modules.Turnero.View" %>
 <%@ Import Namespace="ConnectionDispensario.Modelos" %>
-<div>
+<input type="button" id="C1Button" value="C1" onclick="abrirC1Form()" />
+<div id="C1Form" style="text-align: right;
+	max-width: 300px;
+	background-color: #EEEEFF;
+	padding: 5px 5px 5px 5px;
+    display:none">
+    <span>Establecimiento/Dispensario:</span><asp:DropDownList ID="lstEstablecimiento" runat="server">
+                                            <asp:ListItem Text="Chazón" Value="Chazón"></asp:ListItem>
+                                            
+                                             </asp:DropDownList>
+    <br />
     <span>Dia Comienzo:</span>
     <asp:DropDownList runat="server" ID="DiaStart">
         <asp:ListItem Text="1"></asp:ListItem>
@@ -35,6 +45,23 @@
         <asp:ListItem Text="30"></asp:ListItem>
         <asp:ListItem Text="31"></asp:ListItem>
     </asp:DropDownList>
+    <br />
+    <span>Mes Comienzo:</span>
+    <asp:DropDownList runat="server" ID="MesStart">
+        <asp:ListItem Text="1"></asp:ListItem>
+        <asp:ListItem Text="2"></asp:ListItem>
+        <asp:ListItem Text="3"></asp:ListItem>
+        <asp:ListItem Text="4"></asp:ListItem>
+        <asp:ListItem Text="5"></asp:ListItem>
+        <asp:ListItem Text="6"></asp:ListItem>
+        <asp:ListItem Text="7"></asp:ListItem>
+        <asp:ListItem Text="8"></asp:ListItem>
+        <asp:ListItem Text="9"></asp:ListItem>
+        <asp:ListItem Text="10"></asp:ListItem>
+        <asp:ListItem Text="11"></asp:ListItem>
+        <asp:ListItem Text="12"></asp:ListItem>
+    </asp:DropDownList>
+    <br />
     <span>Dia Finalizacion:</span>
     <asp:DropDownList runat="server" ID="DiaEnd">
         <asp:ListItem Text="1"></asp:ListItem>
@@ -69,8 +96,9 @@
         <asp:ListItem Text="30"></asp:ListItem>
         <asp:ListItem Text="31"></asp:ListItem>
     </asp:DropDownList>
-    <span>Mes:</span>
-    <asp:DropDownList runat="server" ID="Mes">
+    <br />
+    <span>Mes Finalización:</span>
+    <asp:DropDownList runat="server" ID="MesEnd">
         <asp:ListItem Text="1"></asp:ListItem>
         <asp:ListItem Text="2"></asp:ListItem>
         <asp:ListItem Text="3"></asp:ListItem>
@@ -84,12 +112,14 @@
         <asp:ListItem Text="11"></asp:ListItem>
         <asp:ListItem Text="12"></asp:ListItem>
     </asp:DropDownList>
+    <br />
     <span> Año </span>
     <asp:DropDownList runat="server" ID="Año">
         <asp:ListItem Text="2017"></asp:ListItem>
         <asp:ListItem Text="2018"></asp:ListItem>
         <asp:ListItem Text="2019"></asp:ListItem>
     </asp:DropDownList>
+    <br />
     <span>Hora Comienzo:</span>
     <asp:DropDownList runat="server" ID="HoraStart">
         <asp:ListItem Text="0"></asp:ListItem>
@@ -117,6 +147,7 @@
         <asp:ListItem Text="22"></asp:ListItem>
         <asp:ListItem Text="23"></asp:ListItem>
     </asp:DropDownList>
+    <br />
         <span>Hora Finalizacion:</span>
     <asp:DropDownList runat="server" ID="HoraEnd">
         <asp:ListItem Text="0"></asp:ListItem>
@@ -144,7 +175,9 @@
         <asp:ListItem Text="22"></asp:ListItem>
         <asp:ListItem Text="23"></asp:ListItem>
     </asp:DropDownList>
+    <br />
     <asp:Button ID="ImprimirC1" runat="server" Text="Imprimir C1" OnClick="ImprimirC1_Click" /> 
+    <input type="button" value="cerrar" onclick="cerrarC1Form()"  />
 </div>
 <table class="TablaTurnos">
     <tbody>
@@ -280,6 +313,18 @@
 
         });
     
+    function cerrarC1Form()
+    {
+        $('#C1Form').hide();
+        $('#C1Button').show();
+
+    }
+
+    function abrirC1Form() {
+        $('#C1Form').show();
+        $('#C1Button').hide();
+
+    }
 
     function InsertarDiagnosticoFinal(IDT,NP)
     {

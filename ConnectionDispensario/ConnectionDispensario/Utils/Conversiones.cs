@@ -19,7 +19,6 @@ namespace ConnectionDispensario.Utils
             string minutes = p.Minute.ToString();
             string seconds = p.Second.ToString();
             string completeSTR = year + "-" + month + "-" + day + " " + hour + ":" + minutes +":" + seconds;
-            Statics.LogCatcher.AddLog(completeSTR, p.ToLongTimeString(), null, null);
             return completeSTR;
         }
 

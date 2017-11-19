@@ -224,6 +224,17 @@
     margin-right: 10px;
 }
 
+.disp_error {
+    background-color:#f44336;
+    color:#efefef;
+    font-weight:bolder;
+}
+.disp_ok {
+    background-color:#4caf50;
+    color:#efefef;
+    font-weight:bolder;
+}
+
 .DispensarioTextBox {
     border: none;
     color: black;

@@ -142,19 +142,24 @@ namespace Christoc.Modules.Turnero
         {
             int DS = int.Parse(DiaStart.SelectedItem.Text);
             int DE = int.Parse(DiaEnd.SelectedItem.Text);
-            int MES = int.Parse(Mes.SelectedItem.Text);
+            int MESS = int.Parse(MesStart.SelectedItem.Text);
+            int MESE = int.Parse(MesEnd.SelectedItem.Text);
             int AÑO = int.Parse(Año.SelectedItem.Text);
             int HS = int.Parse(HoraStart.SelectedItem.Text);
             int HE = int.Parse(HoraEnd.SelectedItem.Text);
+            string Establecimiento = lstEstablecimiento.SelectedValue;
             string parameters = "IDP=" + PortalId.ToString()
-                + "&IDU=" + UserId.ToString()
+                + "&UID=" + UserId.ToString()
+                + "&PID=" + PortalId.ToString()
                 + "&Y=" + AÑO.ToString()
-                + "&M=" + MES.ToString()
+                + "&MS=" + MESS.ToString()
+                + "&ME=" + MESE.ToString()
                 + "&DS=" + DS.ToString()
                 + "&DE=" + DE.ToString()
                 + "&HS=" + HS.ToString()
-                + "&HE=" + HE.ToString();
-            Response.Redirect("/DesktopModules/Turnero/C1.aspx?" + parameters);
+                + "&HE=" + HE.ToString()
+                + "&EST=" + Establecimiento;
+            Response.Redirect("/DesktopModules/Turnero/Reportes.aspx?" + parameters);
 
         }
     }

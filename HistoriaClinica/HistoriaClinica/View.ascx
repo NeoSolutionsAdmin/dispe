@@ -262,22 +262,7 @@
     </div>
 </div>
 
-<div style="float:left;visibility:hidden">
-    <div style="float:left;color:blue;background-color:#bab9b9;height:10px;width:10px;font-size:10px; vertical-align:middle; text-align:center; line-height:10px">X</div>
-    <div style="float:left;color:blue;background-color:#bab9b9;height:10px;width:10px;font-size:10px; vertical-align:middle; text-align:center; line-height:10px">O</div>
-    <div style="float:left;color:red;background-color:#bab9b9;height:10px;width:10px;font-size:10px; vertical-align:middle; text-align:center; line-height:10px">X</div>
-    <div style="float:left;color:red;background-color:#bab9b9;height:10px;width:10px;font-size:10px; vertical-align:middle; text-align:center; line-height:10px">O</div>
-<div style="width: 40px; height: 40px;visibility:hidden" id="diente">
-    <svg viewBox="0 0 40 40" preserveAspectRatio="xMaxyMax">
-        <polygon id="T" fill="white" stroke="black" stroke-width="1px" points="0,0 40,0 32,10 8,10" onclick="changeState(this)"></polygon>
-        <polygon id="B" fill="white" stroke="black" stroke-width="1px" points="0,40 40,40 32,30 8,30" onclick="changeState(this)"></polygon>
-        <polygon id="L" fill="white" stroke="black" stroke-width="1px" points="0,0 8,10 8,30 0,40" onclick="changeState(this)"></polygon>
-        <polygon id="R" fill="white" stroke="black" stroke-width="1px" points="40,0 40,40 32,30 32,10" onclick="changeState(this)"></polygon>
-        <polygon id="C" fill="white" stroke="black" stroke-width="1px" points="8,10 32,10 32,30 8,30" onclick="changeState(this)"></polygon>
-        <!--<circle r="18" cx="20" cy="20" stroke-width="2px" stroke-opacity="0" fill-opacity="0"></circle>-->
-    </svg>
-</div>
-</div>
+
 <div></div>
 <div id="HistorialClinico" style="padding-bottom: 10px; padding-top: 10px">
     <% if (Session["Paciente"] != null)
@@ -294,6 +279,8 @@
                        Response.Write("<div class=\"ContenedorFichaMinimizada\" id=\"FichaMinimizada" + a.ToString() + "\">");
                        Response.Write("<div class=\"MaximizeButton\" onclick=\"MaximizarFicha(" + a.ToString() + ")\">+</div>");
                        string Puesto = "No establecido";
+                       string MP = "No establecido";
+                       string ME = "No establecido";
                        if (Profile != null && Profile.Count > 0)
                        {
                            for (int b = 0; b < Profile.Count; b++)
@@ -319,7 +306,10 @@
                        {
                            for (int b = 0; b < Profile.Count; b++)
                            {
-                               Response.Write(Profile[b].KEY + ":<b>" + Profile[b].VALUE + "</b></br>");
+                               if (Profile[b]!=null && Profile[b].VALUE!=null &&Profile[b].VALUE.Trim() != "")
+                               {
+                                   Response.Write(Profile[b].KEY + ":<b>" + Profile[b].VALUE + "</b></br>");
+                               }
 
                            }
                        }
@@ -341,9 +331,29 @@
        
        
     %>
-    <!--<div id="Muestra" style="height:150px"><div style="float:left;width:30%;height:100%"></div><div style="width:70%;float:right;height:100%"></div></div>-->
+    <div id="Muestra" style="height:150px"><div style="float:left;width:30%;height:100%"></div><div style="width:70%;float:right;height:100%"></div></div>
 </div>
 <div></div>
+
+<div>
+    <input type="button" value="Texto" class="DispensarioButton2 DispensarioNormalButton" />
+    <input type="button" value="Odontograma" class="DispensarioButton2 DispensarioNormalButton" />
+</div>
+
+<div id="OdontogramaConstructor" runat="server">
+  <div style="margin-top:10px">
+     <div id="Grupo1" style="display:inline-block" runat="server"></div>
+    
+    <div id="Grupo2" style="display:inline-block" runat="server"></div>
+        </div> 
+  
+    <div style="margin-top:10px">
+    <div id="Grupo3" style="display:inline-block" runat="server"></div>
+      
+    <div id="Grupo4" style="display:inline-block" runat="server"></div>
+    </div>
+</div>
+
 <div id="EditorDeHistorial" runat="server">
     <div>1) Redacte su diagnostico clínico en la caja de texto verde</div>
     <div id="ContainerCajaTexto">
@@ -389,6 +399,18 @@
         $("#Med").val(MedID);
         $("#Confirmation").dialog('open');
 
+    }
+
+    function changeCircletoRed(object)
+    {
+        tobjeto = $(object).parent().children("#diente").children("#VB").children("#Circ");
+        tobjeto.attr("visibility", "visible");
+        tobjeto.attr("stroke", "red");
+    }
+    function changeCircletoBlue(object) {
+        tobjeto = $(object).parent().children("#diente").children("#VB").children("#Circ");
+        tobjeto.attr("visibility", "visible");
+        tobjeto.attr("stroke", "blue");
     }
 
     function changeState(object) {

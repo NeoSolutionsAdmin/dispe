@@ -58,6 +58,8 @@ namespace ConnectionDispensario.Modelos
                 if (C["LastName"] != null) PUV.Add(new ProfileUser("Apellido", C["LastName"].PropertyValue));
                 if (C["Puesto"] != null) PUV.Add(new ProfileUser("Puesto", C["Puesto"].PropertyValue));
                 if (C["Telephone"] != null) PUV.Add(new ProfileUser("Teléfono", C["Telephone"].PropertyValue));
+                if (C["MP"] != null) PUV.Add(new ProfileUser("M.P.", C["MP"].PropertyValue));
+                if (C["ME"] != null) PUV.Add(new ProfileUser("M.E.", C["ME"].PropertyValue));
                 
                       
                       

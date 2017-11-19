@@ -172,6 +172,7 @@ namespace Christoc.Modules.Pacientes
                     
                     if (UI.IsInRole("Medico") == true)
                     {
+
                         List<ProfileUser> PU = ConnectionDispensario.Modelos.ProfileUser.getProfileUser(PortalId, UI.UserID);
                         HtmlGenericControl DivFoto = new HtmlGenericControl("div");
                         HtmlGenericControl DivDatos = new HtmlGenericControl("div");

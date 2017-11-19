@@ -202,6 +202,51 @@ namespace Christoc.Modules.HistoriaClinica {
         protected global::System.Web.UI.WebControls.Button btnGuardarCirugia;
         
         /// <summary>
+        /// OdontogramaConstructor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl OdontogramaConstructor;
+        
+        /// <summary>
+        /// Grupo1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Grupo1;
+        
+        /// <summary>
+        /// Grupo2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Grupo2;
+        
+        /// <summary>
+        /// Grupo3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Grupo3;
+        
+        /// <summary>
+        /// Grupo4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Grupo4;
+        
+        /// <summary>
         /// EditorDeHistorial control.
         /// </summary>
         /// <remarks>

@@ -64,6 +64,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="DispensarioACDataSet.cs">
+      <DependentUpon>DispensarioACDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DispensarioACDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,6 +81,7 @@
     <Compile Include="Modelos\Historial.cs" />
     <Compile Include="Modelos\ObraSocial.cs" />
     <Compile Include="Modelos\Paciente.cs" />
+    <Compile Include="Modelos\Reporting\C1.cs" />
     <Compile Include="Modelos\Turno.cs" />
     <Compile Include="Modelos\CIE.cs" />
     <Compile Include="Modelos\Ubber\SuperInterface.cs" />
@@ -86,6 +91,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reports.xsd</DependentUpon>
     </Compile>
     <Compile Include="Statics\LogCatcher.cs" />
     <Compile Include="Utils\Conversiones.cs" />
@@ -112,6 +122,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports.xsc">
+      <DependentUpon>Reports.xsd</DependentUpon>
+    </None>
+    <None Include="Reports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports.xss">
+      <DependentUpon>Reports.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

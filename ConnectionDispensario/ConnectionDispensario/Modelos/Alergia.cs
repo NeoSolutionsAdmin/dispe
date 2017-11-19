@@ -13,8 +13,15 @@ namespace ConnectionDispensario.Modelos
         public string NameAlergia;
         public int ID;
 
+        public DataTable GetAllCulos() 
+        {
+            return null;
+        }
+
         public Alergia(int p_IdPaciente, string p_Alergia)
         {
+            
+            
             IdPaciente = p_IdPaciente;
             NameAlergia = p_Alergia;
         }

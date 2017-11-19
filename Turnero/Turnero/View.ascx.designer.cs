@@ -13,6 +13,15 @@ namespace Christoc.Modules.Turnero {
     public partial class View {
         
         /// <summary>
+        /// lstEstablecimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList lstEstablecimiento;
+        
+        /// <summary>
         /// DiaStart control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,15 @@ namespace Christoc.Modules.Turnero {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DiaStart;
+        
+        /// <summary>
+        /// MesStart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList MesStart;
         
         /// <summary>
         /// DiaEnd control.
@@ -31,13 +49,13 @@ namespace Christoc.Modules.Turnero {
         protected global::System.Web.UI.WebControls.DropDownList DiaEnd;
         
         /// <summary>
-        /// Mes control.
+        /// MesEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Mes;
+        protected global::System.Web.UI.WebControls.DropDownList MesEnd;
         
         /// <summary>
         /// Año control.

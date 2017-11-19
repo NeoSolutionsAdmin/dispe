@@ -19,6 +19,7 @@ using DotNetNuke.Entities.Modules.Actions;
 using DotNetNuke.Services.Localization;
 using ConnectionDispensario;
 using ConnectionDispensario.Modelos;
+using System.Web.UI.HtmlControls;
 
 namespace Christoc.Modules.HistoriaClinica
 {
@@ -78,8 +79,45 @@ namespace Christoc.Modules.HistoriaClinica
             }
         }
 
+        void ConstruirOdontograma() 
+        {
+            for (int a=18;a>10;a--){
+            
+            Tooth MyTooth = LoadControl("/DesktopModules/HistoriaClinica/Tooth.ascx") as Tooth;
+            MyTooth.SetTooth(a);                
+            Grupo1.Controls.Add(MyTooth);
+            }
+            
+            for (int a = 21; a < 29; a++)
+            {
+
+                Tooth MyTooth = LoadControl("/DesktopModules/HistoriaClinica/Tooth.ascx") as Tooth;
+                MyTooth.SetTooth(a);
+                Grupo2.Controls.Add(MyTooth);
+            }
+            
+            for (int a = 48; a > 40; a--)
+            {
+
+                Tooth MyTooth = LoadControl("/DesktopModules/HistoriaClinica/Tooth.ascx") as Tooth;
+                MyTooth.SetTooth(a);
+                Grupo3.Controls.Add(MyTooth);
+            }
+            
+            for (int a = 31; a < 39; a++)
+            {
+
+                Tooth MyTooth = LoadControl("/DesktopModules/HistoriaClinica/Tooth.ascx") as Tooth;
+                MyTooth.SetTooth(a);
+                Grupo4.Controls.Add(MyTooth);
+            }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            ConstruirOdontograma();
+
             try
             {
                 EditorDeHistorial.ClientIDMode = System.Web.UI.ClientIDMode.Static;
