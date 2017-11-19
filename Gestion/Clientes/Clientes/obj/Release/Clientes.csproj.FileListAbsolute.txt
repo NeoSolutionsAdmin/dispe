@@ -1,0 +1,7 @@
+C:\DNN\DesktopModules\Atrox\bin\Clientes.dll
+C:\DNN\DesktopModules\Atrox\bin\Clientes.pdb
+C:\DNN\bin\Clientes.dll
+C:\DNN\bin\Clientes.pdb
+C:\DNN\DesktopModules\Atrox\Clientes\Clientes\obj\Release\Clientes.csprojResolveAssemblyReference.cache
+C:\DNN\DesktopModules\Atrox\Clientes\Clientes\obj\Release\Clientes.dll
+C:\DNN\DesktopModules\Atrox\Clientes\Clientes\obj\Release\Clientes.pdb
