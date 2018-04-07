@@ -11,7 +11,7 @@ namespace Data2.Class
 
 
 
-    public class Struct_DetalleFactura
+    public class Struct_DetalleFactura : ICloneable
     {
         public int DETALLEINT=0;
         public decimal DETALLEDEC=0m;
@@ -190,5 +190,9 @@ namespace Data2.Class
             DETALLEDEC = Cantidad;
         }
 
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
     }
 }

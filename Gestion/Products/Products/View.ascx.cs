@@ -21,7 +21,7 @@ using System.Web.UI.HtmlControls;
 using System.Collections.Generic;
 using System.Data;
 using System.Web.UI.WebControls;
-using System.IO;
+
 
 namespace Christoc.Modules.Products
 {
@@ -55,6 +55,22 @@ namespace Christoc.Modules.Products
 
         }
 
+        private void LlenarMateriasPrimas()
+        {
+            ListItem LINinguna = new ListItem("[Ninguna]", "0");
+            cmbMateriaPrima.Items.Add(LINinguna);
+
+            List<Data2.Class.Struct_Producto> ListadoMateriasPrimas = Data2.Class.Struct_Producto.GetMateriasPrimas(UserId);
+            if (ListadoMateriasPrimas != null)
+            {
+                foreach (Data2.Class.Struct_Producto MP in ListadoMateriasPrimas) { 
+                    ListItem LIMP = new ListItem(MP.Descripcion, MP.Id.ToString());
+                    cmbMateriaPrima.Items.Add(LIMP);
+                }
+            }
+
+        }
+
         private void LlenarUnidades()
         {
             if (cmbUnidades.Items.Count == 0)
@@ -70,6 +86,8 @@ namespace Christoc.Modules.Products
 
             }
         }
+
+
 
         private void LlenarProveedores()
         {
@@ -181,7 +199,8 @@ namespace Christoc.Modules.Products
             {
                 if (Mode.Value.ToLower() == "none")
                 {
-
+                    bool materiaprima = false;
+                    if (ChkMateriaPrima.Checked == true) materiaprima = true; 
                     Data2.Class.Struct_Producto t_PRD = new Data2.Class.Struct_Producto(
                         UserId,
                         int.Parse(cmbProveedor.SelectedValue),
@@ -193,7 +212,9 @@ namespace Christoc.Modules.Products
                         Data2.Statics.Conversion.GetDecimal(txtPrecioCompra.Text),
                         Data2.Statics.Conversion.GetDecimal(txtPorcentajeGanancia.Text),
                         Data2.Statics.Conversion.GetDecimal(txtPrecioFinal.Text),
-                        int.Parse(cmbUnidades.SelectedValue));
+                        int.Parse(cmbUnidades.SelectedValue),
+                        materiaprima,
+                        int.Parse(cmbMateriaPrima.SelectedValue));
                     if (t_PRD.Guardar() == true)
                     {
                         Response.Redirect("~/MyManager/Articulos?Message=Success1");
@@ -225,6 +246,7 @@ namespace Christoc.Modules.Products
                         PRD.PorcentajeGanancia = Data2.Statics.Conversion.GetDecimal(txtPorcentajeGanancia.Text);
                         PRD.PrecioFinal = Data2.Statics.Conversion.GetDecimal(txtPrecioFinal.Text);
                         PRD.IdUnidad = int.Parse(cmbUnidades.SelectedValue);
+                            PRD.EsMateriaPrima = ChkMateriaPrima.Checked;
 
                         if (PRD.Actualizar(UserId))
                         {
@@ -309,7 +331,15 @@ namespace Christoc.Modules.Products
                 for (int a = 0; a < _PA.Listado.Count; a++) 
                 {
                     HtmlGenericControl _TR = new HtmlGenericControl("tr");
-                    _TR.Attributes.Add("class", "AtroxRowTable");
+                    if (_PA.Listado[a].EsMateriaPrima == false)
+                    {
+                        _TR.Attributes.Add("class", "AtroxRowTable");
+                    }
+                    else
+                    {
+                        _TR.Attributes.Add("class", "AtroxRowTable MateriaPrima");
+                    }
+                    
 
                     HtmlGenericControl _TDCodigo = new HtmlGenericControl("td");
                     HtmlGenericControl _TDDescripcion = new HtmlGenericControl("td");
@@ -505,6 +535,16 @@ namespace Christoc.Modules.Products
                             txtPrecioCompra.Text = prod.PrecioCompra.ToString();
                             txtPrecioFinal.Text = prod.PrecioFinal.ToString();
                             txtPrecioNeto.Text = prod.PrecioNeto.ToString();
+                            ChkMateriaPrima.Checked = prod.EsMateriaPrima;
+
+                            for (int a = 0; a < cmbMateriaPrima.Items.Count; a++)
+                            {
+                                if (prod.MateriaPrima.ToString() == cmbMateriaPrima.Items[a].Value) ;
+                                {
+                                    cmbMateriaPrima.SelectedIndex = a;
+                                    break;
+                                }
+                            }
                             
                             for (int a = 0; a < cmbProveedor.Items.Count; a++) 
                             {
@@ -553,6 +593,7 @@ namespace Christoc.Modules.Products
             EventsHandlers();
             LlenarUnidades();
             LlenarProveedores();
+            LlenarMateriasPrimas();
             ConstruirIndice();
             ConstruirListadoArticulos();
             LlenarArchivosCMB();
@@ -736,6 +777,7 @@ namespace Christoc.Modules.Products
                             }
                             if (indexcodigodebarra != -1) codigobarra = separatevalues[indexcodigodebarra];
                             int IdProveddor = int.Parse(CmbUpdateProviders.SelectedValue);
+                            int IdMateriaPrima = int.Parse(cmbMateriaPrima.SelectedValue);
                             Data2.Class.Struct_Producto MyProduct = Data2.Class.Struct_Producto.SelectSingleArticle(UserId, IdProveddor, artcod);
                             if (MyProduct != null)
                             {
@@ -757,10 +799,10 @@ namespace Christoc.Modules.Products
                             }
                             else 
                             {
-                                
-                                
-                                
-                                MyProduct = new Data2.Class.Struct_Producto(UserId, IdProveddor, artcod, codigobarra, descripcion, precioneto, iva, preciocompra, porcentajeganancia, preciofinal, UnidadPorDefecto);
+
+                                bool esmateriaprima = false;
+                                if (ChkMateriaPrima.Checked == true) esmateriaprima = true; 
+                                MyProduct = new Data2.Class.Struct_Producto(UserId, IdProveddor, artcod, codigobarra, descripcion, precioneto, iva, preciocompra, porcentajeganancia, preciofinal, UnidadPorDefecto,esmateriaprima,IdMateriaPrima);
                                 if (MyProduct.Guardar() == true)
                                 {
                                     NewSucces++;

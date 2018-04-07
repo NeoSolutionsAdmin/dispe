@@ -32,6 +32,7 @@
 
     <div runat="server" id="ListadoFacturas" class="ResponsiveDiv LimitedHeightList">
     </div>
+
     <div runat="server" Id="Det" class="ResponsiveDiv LimitedHeightList">
         <div>
         <table style="width:100%">
@@ -50,6 +51,18 @@
             </tbody>
         </table>
             </div>
+    </div>
+    <div Id="Div1" class="ResponsiveDiv LimitedHeightList">
+        <h3>Estadisticas de ventas por productos</h3>
+        </div>
+    <div runat="server" Id="ListOfProducts" class="ResponsiveDiv LimitedHeightList">
+        
+    </div>
+    <div Id="Div1" class="ResponsiveDiv LimitedHeightList">
+        <h3>Estadisticas de ventas en materias primas</h3>
+        </div>
+    <div runat="server" Id="ListOfMateriasPrimas" class="ResponsiveDiv LimitedHeightList">
+        
     </div>
 </div>
 <asp:HiddenField ID="urlbase" ClientIDMode="Static" runat="server" value=""/>

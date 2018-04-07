@@ -166,6 +166,24 @@ namespace Christoc.Modules.ListadoFacturas {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Table_detail;
         
         /// <summary>
+        /// ListOfProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ListOfProducts;
+        
+        /// <summary>
+        /// ListOfMateriasPrimas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ListOfMateriasPrimas;
+        
+        /// <summary>
         /// urlbase control.
         /// </summary>
         /// <remarks>

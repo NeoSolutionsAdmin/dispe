@@ -1,0 +1,8 @@
+D:\Gestion\DesktopModules\Atrox\bin\Polleria.dll
+D:\Gestion\DesktopModules\Atrox\bin\Polleria.pdb
+D:\Gestion\DesktopModules\Atrox\Polleria\Polleria\obj\Debug\Polleria.csproj.CoreCompileInputs.cache
+D:\Gestion\DesktopModules\Atrox\Polleria\Polleria\obj\Debug\Polleria.dll
+D:\Gestion\DesktopModules\Atrox\Polleria\Polleria\obj\Debug\Polleria.pdb
+D:\Gestion\DesktopModules\Atrox\Polleria\Polleria\obj\Debug\Polleria.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\Polleria\Polleria\obj\Debug\Polleria.csproj.CopyComplete
+D:\Gestion\DesktopModules\Atrox\bin\Polleria.dll.config

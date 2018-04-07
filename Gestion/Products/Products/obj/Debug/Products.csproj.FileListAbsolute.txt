@@ -7,3 +7,11 @@ C:\DNN\bin\Products.pdb
 C:\DNN\DesktopModules\Atrox\Products\Products\obj\Debug\Products.csprojResolveAssemblyReference.cache
 C:\DNN\DesktopModules\Atrox\Products\Products\obj\Debug\Products.dll
 C:\DNN\DesktopModules\Atrox\Products\Products\obj\Debug\Products.pdb
+D:\Gestion\bin\Products.dll.config
+D:\Gestion\bin\Products.dll
+D:\Gestion\bin\Products.pdb
+D:\Gestion\DesktopModules\Atrox\Products\Products\obj\Debug\Products.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\Products\Products\obj\Debug\Products.csproj.CoreCompileInputs.cache
+D:\Gestion\DesktopModules\Atrox\Products\Products\obj\Debug\Products.csproj.CopyComplete
+D:\Gestion\DesktopModules\Atrox\Products\Products\obj\Debug\Products.dll
+D:\Gestion\DesktopModules\Atrox\Products\Products\obj\Debug\Products.pdb

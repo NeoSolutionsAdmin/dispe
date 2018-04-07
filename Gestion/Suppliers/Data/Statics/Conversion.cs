@@ -33,6 +33,10 @@ namespace Data2.Statics
         public static bool convertSQLToBoolean(object p_MySQLBOOLEAN)
         {
             string result = p_MySQLBOOLEAN.ToString().ToLower();
+            if (p_MySQLBOOLEAN == null)
+            {
+                return false;
+            }
             switch (result)
             {
                 case "1":

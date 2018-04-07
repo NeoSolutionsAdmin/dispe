@@ -38,6 +38,14 @@
    <div>
    <span class="FormLabel">Unidad:</span><asp:DropDownList ClientIDMode="Static" runat="server" ID="cmbUnidades"></asp:DropDownList>
    </div>
+    <div>
+   <span class="FormLabel">Es materia prima:?</span><asp:CheckBox Text="" ID="ChkMateriaPrima" runat="server" />
+   </div>
+    <div>
+   <span class="FormLabel">MateriaPrima</span><asp:DropDownList ID="cmbMateriaPrima" runat="server"/>
+   </div>
+    
+    
    <div id="fileList" runat="server"></div>
     <div>
     <div>

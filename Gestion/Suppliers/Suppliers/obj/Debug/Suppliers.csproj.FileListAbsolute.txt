@@ -3,3 +3,10 @@ C:\DNN\bin\Suppliers.pdb
 C:\DNN\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.csprojResolveAssemblyReference.cache
 C:\DNN\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.dll
 C:\DNN\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.pdb
+D:\Gestion\bin\Suppliers.dll.config
+D:\Gestion\bin\Suppliers.dll
+D:\Gestion\bin\Suppliers.pdb
+D:\Gestion\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.csproj.CoreCompileInputs.cache
+D:\Gestion\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.dll
+D:\Gestion\DesktopModules\Atrox\Suppliers\Suppliers\obj\Debug\Suppliers.pdb

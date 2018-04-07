@@ -4,3 +4,10 @@ C:\DNN\bin\Data2.pdb
 C:\DNN\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.dll
 C:\DNN\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.pdb
 C:\DNN\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.csproj.CoreCompileInputs.cache
+D:\Gestion\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.dll
+D:\Gestion\DesktopModules\Atrox\Suppliers\Data\obj\Release\Data2.pdb
+D:\Gestion\bin\Data2.dll.config
+D:\Gestion\bin\Data2.dll
+D:\Gestion\bin\Data2.pdb

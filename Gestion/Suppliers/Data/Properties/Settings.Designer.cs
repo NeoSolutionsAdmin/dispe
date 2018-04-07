@@ -12,7 +12,7 @@ namespace Data2.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,8 +26,8 @@ namespace Data2.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\SQLCLOVERFIELD;Initial Catalog=Gestion;User ID=sa;Password=" +
-            "cloverfield161185")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DEIVIT-PC\\SQLCLOVERFIELD;Initial Catalog=Minion;User ID=sa;Password=c" +
+            "loverfield161185")]
         public string GestionConnectionString {
             get {
                 return ((string)(this["GestionConnectionString"]));

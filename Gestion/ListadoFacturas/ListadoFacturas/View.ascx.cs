@@ -38,26 +38,35 @@ namespace Christoc.Modules.ListadoFacturas
     public partial class View : ListadoFacturasModuleBase, IActionable
     {
 
+        public class SubMateriasPrimas
+        {
+            public int IdMateriaPrima;
+            public decimal CANTDEC;
+            public int CANTINT;
+            public bool isdec;
+        }
+
         string sessionkey = "SearchFacturas";
 
-        HtmlGenericControl GenerarFilaPieFactura(string p_label, string p_value) 
+
+        HtmlGenericControl GenerarFilaPieFactura(string p_label, string p_value)
         {
             HtmlGenericControl _row = new HtmlGenericControl("tr");
             HtmlGenericControl _label = new HtmlGenericControl("td");
             HtmlGenericControl _value = new HtmlGenericControl("td");
-            _row.Attributes.Add("Class","colorpiedefactura");
+            _row.Attributes.Add("Class", "colorpiedefactura");
             _label.Attributes.Add("colspan", "3");
             _label.InnerText = p_label;
             _label.Attributes.Add("Class", "valuepiedefactura labelpiedefactura");
             _value.InnerText = "$ " + p_value;
             _value.Attributes.Add("Class", "valuepiedefactura");
-           
+
             _row.Controls.Add(_label);
             _row.Controls.Add(_value);
             return _row;
         }
 
-        HtmlGenericControl GenerarFilaDetalle(string cant, string detalle, string importe, string total, bool alternatecolor) 
+        HtmlGenericControl GenerarFilaDetalle(string cant, string detalle, string importe, string total, bool alternatecolor)
         {
             string classrow;
             if (alternatecolor) { classrow = "metroparline animationline"; } else { classrow = "metroimparline animationline"; }
@@ -82,10 +91,10 @@ namespace Christoc.Modules.ListadoFacturas
             return _row;
         }
 
-        void LlenarFactura(int facturaid, int idRemito=0) 
+        void LlenarFactura(int facturaid, int idRemito = 0)
         {
 
-            
+
 
             Struct_Factura _F = Struct_Factura.GetFacturaById(UserId, facturaid);
 
@@ -93,18 +102,18 @@ namespace Christoc.Modules.ListadoFacturas
             {
                 if (idRemito == 1)
                 {
-                    
-                     Struct_Remito R = Struct_Remito.Get_Remito(facturaid, UserId);
-                     _F = new Struct_Factura(R);
+
+                    Struct_Remito R = Struct_Remito.Get_Remito(facturaid, UserId);
+                    _F = new Struct_Factura(R);
                     _F.IsRemito = true;
                     _F.Remito.GetAndFillDetalle();
                 }
             }
-            catch (Exception E) 
+            catch (Exception E)
             {
                 Data2.Statics.Log.ADD(E.StackTrace + "(" + E.Message + ")", this);
             }
-            if (_F != null) 
+            if (_F != null)
             {
                 if (_F.IsRemito == false)
                 {
@@ -195,17 +204,17 @@ namespace Christoc.Modules.ListadoFacturas
 
                         Table_detail.Controls.Add(GenerarFilaPieFactura("Total:", _F.Remito.total.ToString("#0.00")));
                     }
-                    catch (Exception E) 
+                    catch (Exception E)
                     {
-                        Data2.Statics.Log.ADD( E.StackTrace + "(" + E.Message + ")",this);
+                        Data2.Statics.Log.ADD(E.StackTrace + "(" + E.Message + ")", this);
                     }
-                    }
+                }
 
-                
 
-                
 
-               
+
+
+
 
             }
         }
@@ -216,32 +225,34 @@ namespace Christoc.Modules.ListadoFacturas
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            
-            
-            string[] split = {"?"};
-            urlbase.Value = Request.RawUrl.Split(split,StringSplitOptions.None)[0]; 
+
+
+            string[] split = { "?" };
+            urlbase.Value = Request.RawUrl.Split(split, StringSplitOptions.None)[0];
             try
             {
 
-                if (Request["VC"] != null) 
+                if (Request["VC"] != null)
                 {
                     if (Request["R"] == null)
                     {
                         LlenarFactura(int.Parse(Request["VC"].ToString()));
                     }
-                    else 
+                    else
                     {
                         LlenarFactura(int.Parse(Request["VC"].ToString()), int.Parse(Request["R"].ToString()));
                     }
-                    
+
                 }
 
                 if (Session[sessionkey] != null)
                 {
+                    BuildStatics();
                     BuildSearch();
                     BuildGraph();
+
                 }
-                else 
+                else
                 {
                     HF_Data.Value = "0";
                 }
@@ -255,7 +266,7 @@ namespace Christoc.Modules.ListadoFacturas
 
         private void BuildGraph()
         {
-            
+
             List<Data2.Class.Struct_Factura> _LF = Session[sessionkey] as List<Data2.Class.Struct_Factura>;
             List<Data2.Class.Struct_Remito> _LR = Struct_Remito.GetAllRemitos(UserId);
 
@@ -269,7 +280,7 @@ namespace Christoc.Modules.ListadoFacturas
                 int _FP = 0;
                 int _R = 0;
 
-                if (_LR != null) 
+                if (_LR != null)
                 {
                     _R = _LR.Count;
                 }
@@ -299,7 +310,7 @@ namespace Christoc.Modules.ListadoFacturas
                 HF_DataCant.Value = _FA.ToString() + "," + _FB.ToString() + "," + _FC.ToString() + "," + _FX.ToString() + "," + _FP.ToString() + "," + _R.ToString();
                 HF_DataTitle.Value = "Comprobantes periodo:" + _LF[0].Fecha.ToShortDateString() + "-" + _LF[_LF.Count - 1].Fecha.ToShortDateString();
             }
-            else 
+            else
             {
                 HF_Data.Value = "0";
             }
@@ -321,17 +332,252 @@ namespace Christoc.Modules.ListadoFacturas
             }
         }
 
+        void BuildStatics()
+        {
+            List<Struct_DetalleFactura> MyProds = new List<Struct_DetalleFactura>();
+            List<SubMateriasPrimas> SubMatPrim = new List<SubMateriasPrimas>();
+
+            MyProds.Clear();
+            SubMatPrim.Clear();
+
+            ListOfProducts.Controls.Clear();
+            ListOfMateriasPrimas.Controls.Clear();
+            
+
+            if (Session[sessionkey] != null)
+            {
+                List<Data2.Class.Struct_Factura> _LF = Session[sessionkey] as List<Data2.Class.Struct_Factura>;
+                for (int FACTURAS = 0; FACTURAS < _LF.Count; FACTURAS++)
+                {
+                    Struct_Factura F = _LF[FACTURAS];
+                    if (F.GetDetalle() != null && F.GetDetalle().Count > 0)
+                    {
+
+                        for (int DFC = 0; DFC < F.GetDetalle().Count; DFC++)
+                        {
+                            Struct_DetalleFactura DF = F.GetDetalle()[DFC];
+                            bool coincidenceMat = false;
+                            for (int SBMC = 0; SBMC < SubMatPrim.Count; SBMC++)
+                            {
+                                SubMateriasPrimas SMP = SubMatPrim[SBMC];
+                                if (DF.PRODUCTO.MateriaPrima == SMP.IdMateriaPrima)
+                                {
+                                    if (DF.isdec == true)
+                                    {
+                                        SMP.CANTDEC = SMP.CANTDEC + DF.DETALLEDEC;
+                                    }
+                                    else
+                                    {
+                                        SMP.CANTINT = SMP.CANTINT + DF.DETALLEINT;
+                                    }
+                                    coincidenceMat = true;
+                                    break;
+                                }
+                            }
+                            if (coincidenceMat == false)
+                            {
+                                SubMateriasPrimas NSMP = new SubMateriasPrimas();
+                                NSMP.IdMateriaPrima = DF.PRODUCTO.MateriaPrima;
+                                NSMP.CANTDEC = DF.DETALLEDEC;
+                                NSMP.CANTINT = DF.DETALLEINT;
+                                NSMP.isdec = DF.isdec;
+                                SubMatPrim.Add(NSMP);
+                            }
+                        }
+
+
+                        for (int DFC = 0; DFC < F.GetDetalle().Count; DFC++)
+                        {
+                            Struct_DetalleFactura DF = F.GetDetalle()[DFC];
+                            bool coincidenceProd = false;
+                            for (int UDFC = 0; UDFC < MyProds.Count; UDFC++)
+                            {
+                                Struct_DetalleFactura UDF = MyProds[UDFC];
+                                if (DF.PRODUCTO.Id == UDF.PRODUCTO.Id)
+                                {
+                                    if (UDF.isdec == true)
+                                    {
+                                        decimal cant = DF.DETALLEDEC + UDF.DETALLEDEC;
+                                        UDF.set_cant(cant.ToString());
+                                    }
+                                    else
+                                    {
+                                        int cant = DF.DETALLEINT + UDF.DETALLEINT;
+                                        UDF.set_cant(cant.ToString());
+                                    }
+                                    coincidenceProd = true;
+                                    break;
+                                }
+                            }
+                            if (coincidenceProd == false) { MyProds.Add(DF.Clone() as Struct_DetalleFactura); }
+                        }
+                    }
+                }
+            }
+
+            int max = 0;
+
+            if (MyProds != null && MyProds.Count > 0)
+            {
+
+
+                for (int a = 0; a < MyProds.Count; a++)
+                {
+                    int newval = 0;
+                    if (MyProds[a].isdec == true)
+                    {
+                        newval = decimal.ToInt32(MyProds[a].DETALLEDEC) + 1;
+                    }
+                    else
+                    {
+                        newval = MyProds[a].DETALLEINT + 1;
+                    }
+
+                    if (max <= newval) max = newval;
+
+                }
+            }
+
+            Random R = new Random(DateTime.Now.Millisecond);
+
+
+
+
+            if (MyProds != null && MyProds.Count > 0)
+            {
+                decimal total = 0;
+                HtmlGenericControl headerDiv = new HtmlGenericControl("div");
+                HtmlGenericControl DescHeader = new HtmlGenericControl("span");
+                HtmlGenericControl CantHeader = new HtmlGenericControl("span");
+                HtmlGenericControl TotalVentaheader = new HtmlGenericControl("span");
+                DescHeader.Attributes.Add("style", "width:200px;background-color:#EEEEEE;text-align:center;display:inline-block;font;font-weight:bolder");
+                CantHeader.Attributes.Add("style", "width:100px;background-color:#EEEEEE;text-align:center;display:inline-block;font-weight:bolder");
+                TotalVentaheader.Attributes.Add("style", "width:100px;background-color:#EEEEEE;text-align:center;display:inline-block;font-weight:bolder");
+
+                DescHeader.InnerText="Detalle";
+                CantHeader.InnerText = "Cantidad";
+                TotalVentaheader.InnerText = "Total";
+
+                headerDiv.Controls.Add(DescHeader);
+                headerDiv.Controls.Add(CantHeader);
+                headerDiv.Controls.Add(TotalVentaheader);
+                ListOfProducts.Controls.Add(headerDiv);
+
+                for (int a = 0; a < MyProds.Count; a++)
+                {
+                    HtmlGenericControl StaticContainer = new HtmlGenericControl("div");
+                    HtmlGenericControl DescContainer = new HtmlGenericControl("span");
+                    HtmlGenericControl CantContainer = new HtmlGenericControl("span");
+                    HtmlGenericControl TotalVentaContainer = new HtmlGenericControl("span");
+                    HtmlGenericControl Bar = new HtmlGenericControl("div");
+                    
+
+
+                    string colorvalue = "#" + R.Next(10, 250).ToString("X2");
+                    colorvalue += R.Next(10, 250).ToString("X2");
+                    colorvalue += R.Next(10, 250).ToString("X2");
+
+
+
+
+
+                    DescContainer.Attributes.Add("style", "width:200px;background-color:#EEEEEE;display:inline-block");
+                    CantContainer.Attributes.Add("style", "width:100px;background-color:#EEEEEE;text-align:right;display:inline-block");
+                    TotalVentaContainer.Attributes.Add("style", "width:100px;background-color:#EEEEEE;text-align:right;display:inline-block");
+                    if (Struct_Producto.Get_SingleArticle(UserId, MyProds[a].PRODUCTO.MateriaPrima) != null)
+                    {
+                        DescContainer.InnerText = MyProds[a].PRODUCTO.Descripcion + "(" + Struct_Producto.Get_SingleArticle(UserId, MyProds[a].PRODUCTO.MateriaPrima).Descripcion + ")";
+                    }
+                    else
+                    {
+                        DescContainer.InnerText = MyProds[a].PRODUCTO.Descripcion;
+                    }
+
+                    int cant = 0;
+                    if (MyProds[a].isdec == true)
+                    {
+                        CantContainer.InnerText = MyProds[a].DETALLEDEC.ToString("#.000");
+                        cant = decimal.ToInt32(MyProds[a].DETALLEDEC);
+
+                    }
+                    else
+                    {
+                        CantContainer.InnerText = MyProds[a].DETALLEINT.ToString("#.000");
+                        cant = MyProds[a].DETALLEINT;
+                    }
+
+                    int newvalpix = (cant * 400) / max;
+
+                    Bar.Attributes.Add("style", "width:" + newvalpix.ToString() + "px;background-color:" + colorvalue + ";height:10px");
+
+
+
+                    TotalVentaContainer.InnerText = "$" + MyProds[a].getTotalConIva().ToString("#.00");
+                    total = total + MyProds[a].getTotalConIva();
+                    StaticContainer.Controls.Add(DescContainer);
+                    StaticContainer.Controls.Add(CantContainer);
+                    StaticContainer.Controls.Add(TotalVentaContainer);
+                    ListOfProducts.Controls.Add(StaticContainer);
+                    ListOfProducts.Controls.Add(Bar);
+
+
+
+
+                }
+                HtmlGenericControl DivTotal = new HtmlGenericControl("div");
+                DivTotal.InnerText = "Total: $" + total.ToString("#.00");
+                ListOfProducts.Controls.Add(DivTotal);
+            }
+            if (SubMatPrim != null && SubMatPrim.Count > 0)
+            {
+                for (int a = 0; a < SubMatPrim.Count; a++)
+                {
+                    if (SubMatPrim[a].IdMateriaPrima != 0) { 
+                    
+                        Struct_Producto Product = Struct_Producto.Get_SingleArticle(UserId, SubMatPrim[a].IdMateriaPrima);
+                        if (Product != null)
+                        {
+                            HtmlGenericControl MatPrimContainer = new HtmlGenericControl("div");
+                            HtmlGenericControl DescMatPrim = new HtmlGenericControl("span");
+                            HtmlGenericControl CantMatPrim = new HtmlGenericControl("span");
+                            DescMatPrim.Attributes.Add("style", "width:200px;background-color:#EEEEEE;display:inline-block");
+                            CantMatPrim.Attributes.Add("style", "width:100px;background-color:#EEEEEE;display:inline-block");
+
+                            DescMatPrim.InnerText = Product.Descripcion;
+                            if (SubMatPrim[a].isdec == true)
+                            {
+                                CantMatPrim.InnerText = SubMatPrim[a].CANTDEC.ToString("#.00");
+                            }
+                            else
+                            {
+                                CantMatPrim.InnerText = SubMatPrim[a].CANTDEC.ToString("#.00");
+                            }
+                            MatPrimContainer.Controls.Add(DescMatPrim);
+                            MatPrimContainer.Controls.Add(CantMatPrim);
+                            ListOfMateriasPrimas.Controls.Add(MatPrimContainer);
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    
 
         void BuildSearch()
         {
-            ListadoFacturas.Controls.Clear();
+            
             if (Session[sessionkey] != null)
             {
 
                 List<Data2.Class.Struct_Factura> _LF = Session[sessionkey] as List<Data2.Class.Struct_Factura>;
+                ListadoFacturas.Controls.Clear();
 
                 foreach (Data2.Class.Struct_Factura F in _LF)
                 {
+
+
                     HtmlGenericControl ParentDiv = new HtmlGenericControl("Div");
                     HtmlGenericControl ParentTable = new HtmlGenericControl("Table");
                     HtmlGenericControl ParentRow = new HtmlGenericControl("tr");
@@ -420,6 +666,7 @@ namespace Christoc.Modules.ListadoFacturas
                     ColumnInfo.Controls.Add(Info);
                     ListadoFacturas.Controls.Add(ParentDiv);
                 }
+                
             }
         
         }
@@ -449,15 +696,24 @@ namespace Christoc.Modules.ListadoFacturas
             List<Data2.Class.Struct_Factura> _LF = Data2.Class.Struct_Factura.GetFacturasBetweenDates(Start, End, UserId, false, TF);
 
 
-            if (_LF != null && _LF.Count > 0) 
+            if (_LF != null && _LF.Count > 0)
             {
-                if (Session != null) 
+                if (Session != null)
                 {
                     Session.Remove(sessionkey);
                 }
                 Session.Add(sessionkey, _LF);
                 BuildSearch();
                 BuildGraph();
+                BuildStatics();
+            }
+            else
+            {
+                Session.Remove(sessionkey);
+                BuildSearch();
+                BuildGraph();
+                BuildStatics();
+                Response.Redirect("/MyManager/ListadoDeComprobantes");
             }
 
 

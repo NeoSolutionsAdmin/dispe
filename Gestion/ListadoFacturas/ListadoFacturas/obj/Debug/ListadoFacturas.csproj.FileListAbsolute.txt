@@ -3,3 +3,11 @@ C:\DNN\bin\ListadoFacturas.pdb
 C:\DNN\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.csprojResolveAssemblyReference.cache
 C:\DNN\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.dll
 C:\DNN\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.pdb
+D:\Gestion\bin\ListadoFacturas.dll.config
+D:\Gestion\bin\ListadoFacturas.dll
+D:\Gestion\bin\ListadoFacturas.pdb
+D:\Gestion\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.csproj.CoreCompileInputs.cache
+D:\Gestion\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.csproj.CopyComplete
+D:\Gestion\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.dll
+D:\Gestion\DesktopModules\Atrox\ListadoFacturas\ListadoFacturas\obj\Debug\ListadoFacturas.pdb

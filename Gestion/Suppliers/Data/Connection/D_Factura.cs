@@ -57,16 +57,36 @@ namespace Data2.Connection
                 for (int a = 0; a < p_F.GetDetalle().Count; a++)
                 {
                     GestionDataSetTableAdapters.QueriesTableAdapter QTA = new GestionDataSetTableAdapters.QueriesTableAdapter();
-                    QTA.Insert_DetalleFactura(
-                        p_F.Id,
-                        p_F.GetDetalle()[a].PRODUCTO.Id,
-                        p_F.GetDetalle()[a].PRODUCTO.PrecioNeto,
-                        p_F.GetDetalle()[a].PRODUCTO.IVA,
-                        p_F.GetDetalle()[a].PRODUCTO.PrecioCompra,
-                        p_F.GetDetalle()[a].PRODUCTO.PorcentajeGanancia,
-                        p_F.GetDetalle()[a].PRODUCTO.PrecioFinal,
-                        p_F.GetDetalle()[a].DETALLEINT,
-                        p_F.GetDetalle()[a].DETALLEDEC);
+                    if (p_F.GetDetalle()[a].PRODUCTO.MateriaPrima == 0)
+                    {
+                        QTA.Insert_DetalleFactura(
+                            p_F.Id,
+                            p_F.GetDetalle()[a].PRODUCTO.Id,
+                            p_F.GetDetalle()[a].PRODUCTO.PrecioNeto,
+                            p_F.GetDetalle()[a].PRODUCTO.IVA,
+                            p_F.GetDetalle()[a].PRODUCTO.PrecioCompra,
+                            p_F.GetDetalle()[a].PRODUCTO.PorcentajeGanancia,
+                            p_F.GetDetalle()[a].PRODUCTO.PrecioFinal,
+                            p_F.GetDetalle()[a].DETALLEINT,
+                            p_F.GetDetalle()[a].DETALLEDEC);
+                    }
+                    else
+                    {
+                        QTA.Insert_DetalleFacturaConMateriaPrima
+                            (
+                            p_F.Id,
+                            p_F.GetDetalle()[a].PRODUCTO.Id,
+                            p_F.GetDetalle()[a].PRODUCTO.MateriaPrima,
+                            p_F.GetDetalle()[a].PRODUCTO.PrecioNeto,
+                            p_F.GetDetalle()[a].PRODUCTO.IVA,
+                            p_F.GetDetalle()[a].PRODUCTO.PrecioCompra,
+                            p_F.GetDetalle()[a].PRODUCTO.PorcentajeGanancia,
+                            p_F.GetDetalle()[a].PRODUCTO.PrecioFinal,
+                            p_F.GetDetalle()[a].DETALLEINT,
+                            p_F.GetDetalle()[a].DETALLEDEC
+
+                            );
+                    }
                 }
             }
             else

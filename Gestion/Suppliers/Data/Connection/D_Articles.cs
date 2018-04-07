@@ -28,6 +28,20 @@ namespace Data2.Connection
 
         public enum SearchCondition {PorDescripcion, PorCodigoInterno, PorCodigoBarra}
 
+        public static DataTable Get_MateriasPrimas(int p_IdUser)
+        {
+            GestionDataSet.Select_MateriasPrimasDataTable DT = new GestionDataSet.Select_MateriasPrimasDataTable();
+            GestionDataSetTableAdapters.Select_MateriasPrimasTableAdapter TA = new GestionDataSetTableAdapters.Select_MateriasPrimasTableAdapter();
+            TA.Fill(DT, p_IdUser);
+            if (DT.Rows.Count > 0)
+            {
+                return DT;
+            } else
+            {
+                return null;
+            }
+        }
+
         public static DataTable SearchArticle(int p_iduser, string p_searchstring, SearchCondition p_searchcondition, int IdProvider=-1) 
         {
             string strsearchcondition;

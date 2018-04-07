@@ -30,6 +30,8 @@ namespace Data2.Class
         public int IdUnidad;
         public int CantidadINT;
         public decimal CantidadDEC;
+        public Boolean EsMateriaPrima;
+        public int MateriaPrima = 0;
 
 
 
@@ -65,7 +67,7 @@ namespace Data2.Class
 
         public Struct_Producto
             (
-            
+
             int p_IdUser,
             int p_IdProveedor,
             string p_CodigoInterno,
@@ -76,7 +78,9 @@ namespace Data2.Class
             decimal p_PrecioCompra,
             decimal p_PorcentajeGanancia,
             decimal p_PrecioFinal,
-            int p_IdUnidad
+            int p_IdUnidad,
+            bool p_EsMateriaPrima,
+            int p_MateriaPrima
            
             ) 
         {
@@ -93,6 +97,8 @@ namespace Data2.Class
             PorcentajeGanancia = p_PorcentajeGanancia;
             PrecioFinal = p_PrecioFinal;
             IdUnidad = p_IdUnidad;
+            EsMateriaPrima = p_EsMateriaPrima;
+            MateriaPrima = p_MateriaPrima;
           
 
 
@@ -117,7 +123,9 @@ namespace Data2.Class
            decimal p_PrecioFinal,
            int p_IdUnidad,
             decimal p_CantDecimal,
-            int p_CantInteger
+            int p_CantInteger,
+            bool p_EsMateriaPrima,
+            int p_MateriaPrima
 
            )
         {
@@ -136,6 +144,8 @@ namespace Data2.Class
             IdUnidad = p_IdUnidad;
             CantidadINT = p_CantInteger;
             CantidadDEC = p_CantDecimal;
+            EsMateriaPrima = p_EsMateriaPrima;
+            MateriaPrima = p_MateriaPrima;
             
             
 
@@ -162,7 +172,7 @@ namespace Data2.Class
         public bool Actualizar(int p_IdUSER) 
         {
             GestionDataSetTableAdapters.QueriesTableAdapter QTA = new GestionDataSetTableAdapters.QueriesTableAdapter();
-            int Cant = QTA.update_ArticleData(Id, p_IdUSER, IdProveedor, CodigoInterno, CodigoBarra, Descripcion, PrecioNeto, IVA, PrecioCompra, PorcentajeGanancia, PrecioFinal, IdUnidad);
+            int Cant = QTA.update_ArticleData(Id, p_IdUSER, IdProveedor, CodigoInterno, CodigoBarra, Descripcion, PrecioNeto, IVA, PrecioCompra, PorcentajeGanancia, PrecioFinal, IdUnidad, EsMateriaPrima,MateriaPrima);
             if (Cant == 1)
             {
                 return true;
@@ -190,7 +200,9 @@ namespace Data2.Class
             PrecioCompra, 
             PorcentajeGanancia, 
             PrecioFinal, 
-            IdUnidad) > 0)
+            IdUnidad,
+            EsMateriaPrima,
+            MateriaPrima) > 0)
             {
                 return true;
             }
@@ -244,7 +256,12 @@ namespace Data2.Class
                 int _IdUnidad = int.Parse(_DR["IdUnidad"].ToString());
                 int _CantInt = int.Parse(_DR["CantidadINT"].ToString());
                 decimal _CantDec = Statics.Conversion.GetDecimal( _DR["CantidadDEC"].ToString());
-                Struct_Producto _Product = new Struct_Producto(_id, _idUser, _idProveedor, _CodigoInterno, _CodigoBarra, _Descripcion, _PrecioNeto, _IVA, _PrecioCompra, _PorcentajeGanancia, _PrecioFinal, _IdUnidad,_CantDec,_CantInt);
+                bool _EsMateriaPrima = Statics.Conversion.convertSQLToBoolean(_DR["Padre"]);
+
+                int _MateriaPrima = 0;
+                if (_DR["ArticuloPadre"] != null) _MateriaPrima = int.Parse(_DR["ArticuloPadre"].ToString());
+
+                Struct_Producto _Product = new Struct_Producto(_id, _idUser, _idProveedor, _CodigoInterno, _CodigoBarra, _Descripcion, _PrecioNeto, _IVA, _PrecioCompra, _PorcentajeGanancia, _PrecioFinal, _IdUnidad,_CantDec,_CantInt,_EsMateriaPrima,_MateriaPrima);
                 return _Product;
 
             }
@@ -273,7 +290,10 @@ namespace Data2.Class
                 int _IdUnidad = int.Parse(_DR["IdUnidad"].ToString());
                 int _CantInt = int.Parse(_DR["CantidadINT"].ToString());
                 decimal _CantDec = Statics.Conversion.GetDecimal(_DR["CantidadDEC"].ToString());
-                Struct_Producto _Product = new Struct_Producto(_id, _idUser, _idProveedor, _CodigoInterno, _CodigoBarra, _Descripcion, _PrecioNeto, _IVA, _PrecioCompra, _PorcentajeGanancia, _PrecioFinal, _IdUnidad,_CantDec,_CantInt);
+                bool _EsMateriaPrima = Statics.Conversion.convertSQLToBoolean(_DR["Padre"]);
+                int _MateriaPrima = 0;
+                if (_DR["ArticuloPadre"] != null) _MateriaPrima = int.Parse(_DR["ArticuloPadre"].ToString());
+                Struct_Producto _Product = new Struct_Producto(_id, _idUser, _idProveedor, _CodigoInterno, _CodigoBarra, _Descripcion, _PrecioNeto, _IVA, _PrecioCompra, _PorcentajeGanancia, _PrecioFinal, _IdUnidad,_CantDec,_CantInt,_EsMateriaPrima,_MateriaPrima);
                 return _Product;
 
             } else { return null; }
@@ -401,8 +421,11 @@ namespace Data2.Class
                     int _IdUnidad = int.Parse(_PI.DATA.Rows[a]["IdUnidad"].ToString());
                     int _CantInt = int.Parse(_PI.DATA.Rows[a]["CantidadINT"].ToString());
                     decimal _CantDec = Statics.Conversion.GetDecimal(_PI.DATA.Rows[a]["CantidadDEC"].ToString());
+                    bool _EsMateriaPrima = Statics.Conversion.convertSQLToBoolean(_PI.DATA.Rows[a]["Padre"]);
+                    int _MateriaPrima = 0;
+                    if (_PI.DATA.Rows[a]["ArticuloPadre"] != null) _MateriaPrima = int.Parse(_PI.DATA.Rows[a]["ArticuloPadre"].ToString());
 
-                    ListadoProductos.Add(new Struct_Producto(_id, _idUser, _idProveedor, _CodigoInterno, _CodigoBarra, _Descripcion, _PrecioNeto, _IVA, _PrecioCompra, _PorcentajeGanancia, _PrecioFinal, _IdUnidad,_CantDec,_CantInt));
+                    ListadoProductos.Add(new Struct_Producto(_id, _idUser, _idProveedor, _CodigoInterno, _CodigoBarra, _Descripcion, _PrecioNeto, _IVA, _PrecioCompra, _PorcentajeGanancia, _PrecioFinal, _IdUnidad,_CantDec,_CantInt,_EsMateriaPrima,_MateriaPrima));
 
 
 
@@ -445,6 +468,28 @@ namespace Data2.Class
                 return "null";
             }
 
+
+        }
+
+        public static List<Struct_Producto> GetMateriasPrimas(int IdUser)
+        {
+            List<Struct_Producto> SP = new List<Struct_Producto>();
+            DataTable DT =  Connection.D_Articles.Get_MateriasPrimas(IdUser);
+            
+            if (DT!=null && DT.Rows.Count > 0)
+            {
+
+                for (int a = 0; a < DT.Rows.Count; a++)
+                {
+                    SP.Add(DataRowToProduct(DT.Rows[a]));
+                }
+                return SP;
+
+            }
+            else
+            {
+                return null;
+            }
 
         }
 
