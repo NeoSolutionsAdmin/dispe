@@ -1,0 +1,8 @@
+D:\Gestion\bin\Gastos.dll.config
+D:\Gestion\bin\Gastos.dll
+D:\Gestion\bin\Gastos.pdb
+D:\Gestion\DesktopModules\Atrox\Gastos\Gastos\obj\Debug\Gastos.csprojResolveAssemblyReference.cache
+D:\Gestion\DesktopModules\Atrox\Gastos\Gastos\obj\Debug\Gastos.csproj.CoreCompileInputs.cache
+D:\Gestion\DesktopModules\Atrox\Gastos\Gastos\obj\Debug\Gastos.csproj.CopyComplete
+D:\Gestion\DesktopModules\Atrox\Gastos\Gastos\obj\Debug\Gastos.dll
+D:\Gestion\DesktopModules\Atrox\Gastos\Gastos\obj\Debug\Gastos.pdb
