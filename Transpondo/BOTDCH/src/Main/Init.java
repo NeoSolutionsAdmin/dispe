@@ -57,14 +57,27 @@ public class Init {
 	}
 	
 	
+	public static void linuxmessage(String Message) 
+	{
+		OS = CheckSO();
+		if (OS.contains("linux")==true) 
+		{
+			try{
+			Runtime.getRuntime().exec("wall -n " + Message);} catch (Exception e) {}
+		}
+	}
 	
 	public static void main(String args[])
 	{
 		
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		Calendar cal = Calendar.getInstance();
+		
+		linuxmessage("Arrancando sistema");
+		
 		System.out.println("Arrancando Sistema... Fecha: " + dateFormat.format(cal.getTime()));
 		System.out.println("Iniciando ShutdownHOOK...");
+		linuxmessage("Iniciando HOOK");
 		
 		Runtime RT = Runtime.getRuntime();
 		RT.addShutdownHook(new Thread(new Runnable() {
@@ -72,16 +85,33 @@ public class Init {
 			@Override
 			public void run() {
 				System.out.println("Terminando programa... Fecha: " + dateFormat.format(cal.getTime()));
-				
+				linuxmessage("Finalizando programa");
 			}
 		}));
 
+		try {
+			linuxmessage("Arranca en 20 seg");
+		System.out.println("Arranca en 20 segundos");
+			Thread.sleep(10000);
+			System.out.println("Arranca en 10 segundos");
+			linuxmessage("Arrancando en 10 seg");
+			Thread.sleep(10000);
+			System.out.println("Arrancando...");
+			linuxmessage("Arrancando...");
+			
+		
+		} catch (Exception e) 
+		{
+			
+		}
+		
 		TB = new TelegramBot("487450082:AAFZaJTteXuzZURiIUU-_mrvVGUQctce3Oc");
 		GetUpdates GU = new GetUpdates();
 		GetUpdatesResponse GUR = TB.execute(GU);
 		
 		 List<Update> LU = GUR.updates();
 		
+			linuxmessage("Descartando buffer");
 		 System.out.println("Descartando buffer...");
 		 
 		 if (LU.size()>0)
@@ -92,7 +122,7 @@ public class Init {
 				 TGU.offset((LU.get(a).updateId()+1));
 				 TGU.limit(1);
 				 TB.execute(TGU);
-				 
+					linuxmessage("Descartando: " + LU.get(a).message().text());
 				 System.out.println("Descartando...[" + LU.get(a).message().text() + "]");
 				 
 			 }
@@ -150,6 +180,7 @@ public class Init {
 					ListadoDeGrupos.add(G[a]);
 					if (G[a].TelephoneNumber!=null){
 					System.out.println(G[a].TelephoneNumber);
+					linuxmessage("Cargando: " + G[a].TelephoneNumber);
 					} else 
 					{
 						System.out.println("Grupo:" + G[a].Telegram_UID + " no tiene numero de Teléfono seteado");

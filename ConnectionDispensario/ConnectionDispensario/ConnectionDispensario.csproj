@@ -60,13 +60,10 @@
     <Compile Include="Conexiones\Con_AntecedentesQuirurgicos.cs" />
     <Compile Include="Conexiones\Con_AntecedentesPatologicosPersonales.cs" />
     <Compile Include="Conexiones\Con_Medicacion.cs" />
-    <Compile Include="Conexiones\TableAdapterManager.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Conexiones\TableAdapterManager.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="DispensarioACDataSet.cs">
       <DependentUpon>DispensarioACDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DispensarioACDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

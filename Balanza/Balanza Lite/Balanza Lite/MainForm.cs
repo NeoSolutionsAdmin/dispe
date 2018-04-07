@@ -24,6 +24,8 @@ namespace Balanza_Lite
         SerialPort SP;
         public static Modo MODO;
 
+        public Boolean Sum = true;
+
         public MainForm()
         {
             InitializeComponent();
@@ -72,9 +74,10 @@ namespace Balanza_Lite
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            
             frmPassword FRMP = new frmPassword();
             FRMP.ShowDialog();
-            if (DateTime.Now.Day > 2 && DateTime.Now.Month > 11) 
+            if (DateTime.Now.Day > 27 && DateTime.Now.Month > 11) 
             {
                 MessageBox.Show("No se encuentra la balanza");
                 Application.Exit();
@@ -91,7 +94,8 @@ namespace Balanza_Lite
             
 
             grpBoxRegistro.Visible = false;
-        /*    FileStream FS =  File.Create("c:\\BinaryRandom.bin");
+            /*
+            FileStream FS =  File.Create("d:\\BinaryRandom.bin");
             
             Random R = new Random();
             
@@ -115,9 +119,9 @@ namespace Balanza_Lite
             MyByteList.Add((byte)0x03);
             FS.Write(MyByteList.ToArray(),0,MyByteList.ToArray().Length);
             }
-            FS.Close();*/
+            FS.Close();
 
-
+    */
 
             Clases.BalanzaDataSetTableAdapters.ProductosTableAdapter PTA = new Clases.BalanzaDataSetTableAdapters.ProductosTableAdapter();
             
@@ -242,6 +246,7 @@ namespace Balanza_Lite
 
         private void btnNuevoPeso_Click(object sender, EventArgs e)
         {
+            grpCalculoBruto.Visible = true;
             Application.DoEvents();
             ClearAll();
             MODO = Modo.Nuevo;
@@ -253,6 +258,51 @@ namespace Balanza_Lite
             btnSaveTara.Enabled = false;
             btnSaveTara.Visible = false;
             grpBoxRegistro.Visible = true;
+            txtPorcentajeBruto.Text = "0";
+            RecalculoBruto();
+
+            
+        }
+
+        void RecalculoBruto()
+        {
+            if (lblRBruto.Text == "") {
+                lblRBruto.Text = lblBascula.Text.Substring(1).Replace("\r\n", " ");
+                lblRBruto.Text = lblRBruto.Text.Trim();
+                
+            }
+            string rs = RightSign();
+            txtPorcentajeBruto.Text = txtPorcentajeBruto.Text.Replace(rs[0], rs[1]);
+            txtPorcentajeBruto.Select(txtPorcentajeBruto.Text.Length, 0);
+            if (txtPorcentajeBruto.Text != "")
+            {
+                try
+                {
+                    decimal PorcentajeBruto = decimal.Parse(txtPorcentajeBruto.Text);
+                    decimal result = 0m;
+
+                    
+                        result = (decimal.Parse(lblRBruto.Text) * PorcentajeBruto) / 100;
+
+
+
+                    if (Sum == true)
+                    {
+
+                        lblBrutoFinal.Text = (int.Parse(Math.Round(result, 0).ToString()) + int.Parse(lblRBruto.Text)).ToString();
+
+                    }
+                    else
+                    {
+                        lblBrutoFinal.Text =  (int.Parse(lblRBruto.Text) - int.Parse(Math.Round(result, 0).ToString())).ToString();
+                    }
+
+                } catch (Exception E)
+                {
+                    lblBrutoFinal.Text = "[Error]";
+                }
+            }
+
         }
 
         private void EnabledAllForm() 
@@ -287,7 +337,7 @@ namespace Balanza_Lite
 
                     Clases.MyItem MI = new Clases.MyItem(treeView1,txtPatente.Text,cmbProducto.Text);
                     
-                    MI.setBruto(int.Parse(lblRBruto.Text));
+                    MI.setBruto(int.Parse(lblBrutoFinal.Text));
                     SetAllData(MI);
                     MI.SelectedImageIndex = 0;
                     ClearAll();
@@ -297,7 +347,7 @@ namespace Balanza_Lite
                     if (treeView1.SelectedNode != null && treeView1.SelectedNode.Name.StartsWith("record") == true)
                     {
                         Clases.MyItem MI = treeView1.SelectedNode as Clases.MyItem;
-                        MI.setBruto(int.Parse(lblBascula.Text.Substring(1)));
+                        MI.setBruto(int.Parse(lblBrutoFinal.Text));
                         ClearAll();
                         grpBoxRegistro.Visible = false;
 
@@ -355,6 +405,7 @@ namespace Balanza_Lite
             btnSaveTara.Enabled = true;
             btnSaveTara.Visible = true;
             grpBoxRegistro.Visible = true;
+            grpCalculoBruto.Visible = false;
         }
 
         private void btnSaveTara_Click(object sender, EventArgs e)
@@ -425,13 +476,19 @@ namespace Balanza_Lite
                     MODO = Modo.Modificar;
                     if (R.Peso == 0)
                     {
+                        lblRBruto.Text = lblBascula.Text.Substring(1);
                         grpBoxRegistro.Visible = true;
                         btnSaveBruto.Visible = true;
                         btnSaveBruto.Enabled = true;
+                        txtPorcentajeBruto.Text = "0";
+                        grpCalculoBruto.Visible = true;
+                        RecalculoBruto();
+
 
                     }
                     if (R.Tara == 0)
                     {
+                        grpCalculoBruto.Visible = false;
                         grpBoxRegistro.Visible = true;
                         btnSaveTara.Visible = true;
                         btnSaveTara.Enabled = true;
@@ -446,9 +503,87 @@ namespace Balanza_Lite
             }
         }
 
-      
-       
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (treeView1.SelectedNode != null)
+            {
+                if (treeView1.SelectedNode.Name.StartsWith("record") == true)
+                {
+                    MyItem T_MI = (MyItem) treeView1.SelectedNode;
+                    Registro R = T_MI.REG;
 
-       
+                    string path_temp = Application.StartupPath;
+                    string path_file = path_temp + "\\readme.html";
+                    if (File.Exists(path_file) == true)
+                    {
+                        File.Delete(path_file);
+                    }
+
+                    while ( File.Exists(path_file)==true )
+                    {
+                    }
+
+                    string htmlmatrix =
+                        "<!DOCTYPE html> <html> <head>  </head>  <body style=\"border-style:solid; width: 400px\"> " + 
+                        " [bodyfields] </body> </html>";
+                    string htmlbodyfields = "<p style = \"font-size:40px;padding-left:125px\"><img src = \"./logomigul.jpg\\\"><br><span style = \"font-size:20px;line-height:10px;display:inline-block\"> COMPROBANTE DE CARGA </br> <span style=\"font-size:8px\"> [FechaYHora]</span></span></p><table style=\"margin-top:-30px\"> <tbody><tr style = \"font-size:15px\"> <td style = \"width:400px;border:solid;border-width:1px; border-color:black\"> Cliente: [Cliente] <br>Chofer: [Chofer] <br>Carga: [Carga] <br>Bruto: [Bruto] Kg.<br>Tara: [Tara] Kg.<br>Neto: [Neto] Kg.<br> </td> <td style = \"width:100px;border:solid;border-width:1px; border-color:black;text-align:center;vertical-align:top\"> Firma </td> </tr>  </tbody></table>";
+
+
+
+                    
+htmlmatrix = htmlmatrix.Replace("[bodyfields]", htmlbodyfields);
+                    htmlmatrix = htmlmatrix.Replace("[FechaYHora]", R.FechaYHora.ToShortDateString() + " " + R.FechaYHora.ToShortTimeString());
+                    htmlmatrix = htmlmatrix.Replace("[Cliente]", R.Cliente);
+                    htmlmatrix = htmlmatrix.Replace("[Chofer]", R.Chofer);
+
+                    Clases.BalanzaDataSetTableAdapters.ProductosTableAdapter TA = new Clases.BalanzaDataSetTableAdapters.ProductosTableAdapter();
+                    string producto = TA.GetProductByID2(R.IdProducto).Rows[0]["Nombre"].ToString();
+                    
+                    htmlmatrix = htmlmatrix.Replace("[Carga]", producto);
+                    htmlmatrix = htmlmatrix.Replace("[Bruto]", R.Peso.ToString());
+                    htmlmatrix = htmlmatrix.Replace("[Tara]", R.Tara.ToString());
+                    htmlmatrix = htmlmatrix.Replace("[Neto]", R.Neto.ToString());
+                    FileStream FS = File.Create(path_file);
+                    FS.Close();
+                    File.WriteAllText(path_file, htmlmatrix);
+                    System.Diagnostics.Process.Start("file:///" + path_file);
+
+                }
+            }
+        }
+
+        private string RightSign()
+        {
+            if (1.1f == float.Parse("1.1"))
+            {
+                return ",.";
+            }
+            else
+            {
+                return ".,";
+            }
+        }
+
+        private void btnOperador_Click(object sender, EventArgs e)
+        {
+            if (Sum == true)
+            {
+                Sum = false;
+                btnOperador.Text = "-";
+                RecalculoBruto();
+
+            }
+            else
+            {
+                Sum = true;
+                btnOperador.Text = "+";
+                RecalculoBruto();
+            }
+        }
+
+        private void txtPorcentajeBruto_TextChanged(object sender, EventArgs e)
+        {
+            RecalculoBruto();
+        }
     }
 }

@@ -9,20 +9,21 @@ namespace Clases
     {
         private BalanzaDataSetTableAdapters.RegistrosTableAdapter TA = new BalanzaDataSetTableAdapters.RegistrosTableAdapter();
         private string UID;
-        private int TARA=0;
-        private int PESO=0;
-        private int PESOCARGA=0;
-        private string CLIENTE="";
-        private int IDPRODUCTO=0;
-        private string PATENTE="";
-        private decimal HUMEDAD=0;
-        private string CHOFER="";
+        private int TARA = 0;
+        private int PESO = 0;
+        private int PESOCARGA = 0;
+        private string CLIENTE = "";
+        private int IDPRODUCTO = 0;
+        private string PATENTE = "";
+        private decimal HUMEDAD = 0;
+        private string CHOFER = "";
         private DateTime Fecha;
 
         public string Cliente { get { return CLIENTE; } }
         public string Patente { get { return PATENTE; } }
         public decimal Humedad { get { return HUMEDAD; } }
         public string Chofer { get { return CHOFER; } }
+        public DateTime FechaYHora   { get { return Fecha; } }
 
         public void setData(
             string p_cliente,

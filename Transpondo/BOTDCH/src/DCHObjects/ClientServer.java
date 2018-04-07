@@ -41,6 +41,7 @@ public class ClientServer implements Runnable {
 					{
 						Cadena = Cadena.trim();
 						System.out.println("Cadena recibida: " + Cadena);
+						Main.Init.linuxmessage("Cadena recibida:" + Cadena);
 						Thread.sleep(1000);
 						CliSocket.close();
 						if (Cadena!="")
@@ -93,18 +94,24 @@ public class ClientServer implements Runnable {
 		{
 			if (Message.toLowerCase().contains("alarma")){			
 			Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Alarma de robo \n Espere su llamado...");
+			Init.linuxmessage("Alarma de robo:" + G.TelephoneNumber);
 			}
 			if (Message.toLowerCase().contains("corte")){			
-				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Corte del suministro electrico");
+				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Corte del suministro electrico...");
+				Init.linuxmessage("Corte suministro electrico:" + G.TelephoneNumber);
+				
 				}
 			if (Message.toLowerCase().contains("normalizado")){			
-				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Suministro electrico normalizado");
+				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Suministro electrico normalizado...");
+				Init.linuxmessage("Suministro electrico normalizao:" + G.TelephoneNumber);
 				}
 			if (Message.toLowerCase().contains("emergencia")){			
-				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Emergencia medica \n Ambulancia en camino");
+				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Emergencia medica \n Ambulancia en camino...");
+				Init.linuxmessage("Emergencia medica:" + G.TelephoneNumber);
 				}
 			if (Message.toLowerCase().contains("alerta")){			
-				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Hay una clase de alerta en la vivienda \n Espere su llamado...");
+				Init.Talk(G.Telegram_UID, "DCH INFORMA: \n Sistema de mantenimiento de rutina... ");
+				Init.linuxmessage("Mantenimiento rutinario:" + G.TelephoneNumber);
 				}
 		}
 		

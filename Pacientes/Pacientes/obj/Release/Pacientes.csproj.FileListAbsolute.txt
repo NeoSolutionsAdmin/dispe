@@ -11,3 +11,18 @@ C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\newpaciente.png
 C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\savepaciente.png
 C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\searchpaciente.png
 C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\uploadpaciente.png
+D:\Tortoise\Dispe\trunk\bin\cancelpaciente.png
+D:\Tortoise\Dispe\trunk\bin\deletepaciente.png
+D:\Tortoise\Dispe\trunk\bin\editpaciente.png
+D:\Tortoise\Dispe\trunk\bin\module.css
+D:\Tortoise\Dispe\trunk\bin\newpaciente.png
+D:\Tortoise\Dispe\trunk\bin\savepaciente.png
+D:\Tortoise\Dispe\trunk\bin\searchpaciente.png
+D:\Tortoise\Dispe\trunk\bin\uploadpaciente.png
+D:\Tortoise\Dispe\trunk\bin\Pacientes.dll.config
+D:\Tortoise\Dispe\trunk\bin\Pacientes.dll
+D:\Tortoise\Dispe\trunk\bin\Pacientes.pdb
+D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.csprojResolveAssemblyReference.cache
+D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.csproj.CoreCompileInputs.cache
+D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.dll
+D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.pdb

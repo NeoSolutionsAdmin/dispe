@@ -1,0 +1,9 @@
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Release\Pesos.accdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Release\Clases.dll.config
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Release\Clases.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Release\Clases.pdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Release\System.Data.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Release\Clases.csproj.CoreCompileInputs.cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Release\Clases.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Release\Clases.pdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Release\Clases.csprojResolveAssemblyReference.cache

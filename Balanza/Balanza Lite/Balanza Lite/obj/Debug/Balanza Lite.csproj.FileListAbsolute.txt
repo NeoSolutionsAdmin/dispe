@@ -12,3 +12,20 @@ C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\
 C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.exe
 C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.pdb
 C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.frmPassword.resources
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Pesos.accdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Balanza Lite.exe.config
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Balanza Lite.exe
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Balanza Lite.pdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Clases.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\System.Data.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Clases.pdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\bin\Debug\Clases.dll.config
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.csprojResolveAssemblyReference.cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.MainForm.resources
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.frmPassword.resources
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.Properties.Resources.resources
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza_Lite.VisualizadorReportes.resources
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.csproj.GenerateResource.Cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.csproj.CoreCompileInputs.cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.exe
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Balanza Lite\obj\Debug\Balanza Lite.pdb

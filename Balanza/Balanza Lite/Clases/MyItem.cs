@@ -12,6 +12,7 @@ namespace Clases
         public Clases.BalanzaDataSetTableAdapters.ProductosTableAdapter PTA = new BalanzaDataSetTableAdapters.ProductosTableAdapter();
         public Clases.BalanzaDataSet.ProductosDataTable PDT = new BalanzaDataSet.ProductosDataTable();
 
+        
 
         public MyItem(System.Windows.Forms.TreeView TV, System.Data.DataRow p_DR) : base() 
         {
@@ -58,8 +59,7 @@ namespace Clases
             setBruto(Bruto, false);
             setTara(Tara, false);
             checkForNeto();
-
-
+            
         }
 
         public void setBruto(int p_bruto, Boolean p_save = true) 

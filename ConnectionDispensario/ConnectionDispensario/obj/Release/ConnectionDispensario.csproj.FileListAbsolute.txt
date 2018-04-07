@@ -3,3 +3,7 @@ C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\Co
 C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\bin\Release\ConnectionDispensario.pdb
 C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Release\ConnectionDispensario.dll
 C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Release\ConnectionDispensario.pdb
+D:\Tortoise\Dispe\trunk\ConnectionDispensario\ConnectionDispensario\obj\Release\ConnectionDispensario.csprojResolveAssemblyReference.cache
+D:\Tortoise\Dispe\trunk\ConnectionDispensario\ConnectionDispensario\obj\Release\ConnectionDispensario.csproj.CoreCompileInputs.cache
+D:\Tortoise\Dispe\trunk\ConnectionDispensario\ConnectionDispensario\obj\Release\ConnectionDispensario.dll
+D:\Tortoise\Dispe\trunk\ConnectionDispensario\ConnectionDispensario\obj\Release\ConnectionDispensario.pdb

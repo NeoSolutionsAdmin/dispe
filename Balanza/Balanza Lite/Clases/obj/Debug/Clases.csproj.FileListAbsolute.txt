@@ -6,3 +6,27 @@ C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Clases\bin\Debug\
 C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Clases\obj\Debug\Clases.dll
 C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Clases\obj\Debug\Clases.pdb
 C:\Users\VM\Documents\Visual Studio 2012\Projects\Balanza Lite\Clases\obj\Debug\Clases.csprojResolveAssemblyReference.cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\Pesos.accdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\Clases.dll.config
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\Clases.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\Clases.pdb
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\mscorlib.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\System.Data.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\es\mscorlib.resources.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\sortkey.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\sorttbls.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\big5.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\bopomofo.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\ksc.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\prc.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\prcp.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\xjis.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\normidna.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\normnfc.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\normnfd.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\normnfkc.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\bin\Debug\normnfkd.nlp
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Debug\Clases.csprojResolveAssemblyReference.cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Debug\Clases.dll
+D:\Tortoise\Dispe\trunk\Balanza\Balanza Lite\Clases\obj\Debug\Clases.pdb
