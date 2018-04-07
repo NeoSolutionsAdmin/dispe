@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace Christoc.Modules.Turnero
 {
@@ -13,8 +14,12 @@ namespace Christoc.Modules.Turnero
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            filenamefield.ClientIDMode = ClientIDMode.Static;
+
             if (!IsPostBack) 
             {
+                string filename = Guid.NewGuid().ToString() + ".pdf";
+                filenamefield.Value = filename;
                 RV.LocalReport.ReportPath = MapPath("/DesktopModules/Turnero/Reports/ReportC1.rdlc");
 
                 ConnectionDispensario.Modelos.Reporting.C1 C1 = new ConnectionDispensario.Modelos.Reporting.C1();
@@ -47,10 +52,10 @@ namespace Christoc.Modules.Turnero
                 
                 RV.LocalReport.SetParameters(new ReportParameter[] {
                     new ReportParameter("NombreMedico",UI.FirstName + " " + UI.LastName),
-                    new ReportParameter("Establecimiento","Dispensario Municipal Chazón"),
+                    new ReportParameter("Establecimiento","Dispensario Municipal \"Dr. H Weihmuller\""),
                     new ReportParameter("Servicio",UI.Profile.GetPropertyValue("Puesto")),
-                    new ReportParameter("CodigoEstablecimiento","4200042"),
-                    new ReportParameter("CodigoServicio","200"),
+                    new ReportParameter("CodigoEstablecimiento","4200026"),
+                    new ReportParameter("CodigoServicio","..."),
                     new ReportParameter("TotalObraSocial",C1.totalplandesalud.ToString()),
                     new ReportParameter("TotalNingunaObraSocial",C1.totalsinplandesalud.ToString()),
                     new ReportParameter("Tmenor1m",C1.totalmenor1m.ToString()),
@@ -85,6 +90,11 @@ namespace Christoc.Modules.Turnero
                 
                 
                 RV.LocalReport.Refresh();
+                byte[] b = RV.LocalReport.Render("PDF");
+
+
+                string path = Server.MapPath(DotNetNuke.Entities.Portals.PortalSettings.Current.HomeDirectory);
+                File.WriteAllBytes(path + "\\"+filename,b);
             }
         }
     }

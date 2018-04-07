@@ -1,7 +1,8 @@
-C:\Dispensario Arroyo Cabral\bin\Turnero.dll
-C:\Dispensario Arroyo Cabral\bin\Turnero.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.csprojResolveAssemblyReference.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\RdlCompile.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\RdlCompile.compiled
+D:\DNNDispensario\bin\Turnero.dll.config
+D:\DNNDispensario\bin\Turnero.dll
+D:\DNNDispensario\bin\Turnero.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.csprojResolveAssemblyReference.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.csproj.CoreCompileInputs.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.dll
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Debug\Turnero.csproj.CopyComplete

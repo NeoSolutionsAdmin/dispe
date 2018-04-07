@@ -1,28 +1,15 @@
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Pacientes.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Pacientes.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.csprojResolveAssemblyReference.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\module.css
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\cancelpaciente.png
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\deletepaciente.png
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\editpaciente.png
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\newpaciente.png
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\savepaciente.png
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\searchpaciente.png
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\uploadpaciente.png
-D:\Tortoise\Dispe\trunk\bin\cancelpaciente.png
-D:\Tortoise\Dispe\trunk\bin\deletepaciente.png
-D:\Tortoise\Dispe\trunk\bin\editpaciente.png
-D:\Tortoise\Dispe\trunk\bin\module.css
-D:\Tortoise\Dispe\trunk\bin\newpaciente.png
-D:\Tortoise\Dispe\trunk\bin\savepaciente.png
-D:\Tortoise\Dispe\trunk\bin\searchpaciente.png
-D:\Tortoise\Dispe\trunk\bin\uploadpaciente.png
-D:\Tortoise\Dispe\trunk\bin\Pacientes.dll.config
-D:\Tortoise\Dispe\trunk\bin\Pacientes.dll
-D:\Tortoise\Dispe\trunk\bin\Pacientes.pdb
-D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.csprojResolveAssemblyReference.cache
-D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.csproj.CoreCompileInputs.cache
-D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.dll
-D:\Tortoise\Dispe\trunk\Pacientes\Pacientes\obj\Release\Pacientes.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\bin\cancelpaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\deletepaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\editpaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\module.css
+D:\DNNDispensario\DesktopModules\Dispensario\bin\newpaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\savepaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\searchpaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\uploadpaciente.png
+D:\DNNDispensario\DesktopModules\Dispensario\bin\Pacientes.dll.config
+D:\DNNDispensario\DesktopModules\Dispensario\bin\Pacientes.dll
+D:\DNNDispensario\DesktopModules\Dispensario\bin\Pacientes.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.csprojResolveAssemblyReference.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.csproj.CoreCompileInputs.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.dll
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Release\Pacientes.pdb

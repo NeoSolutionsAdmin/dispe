@@ -1,7 +1,7 @@
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Turnero.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Turnero.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.csprojResolveAssemblyReference.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\RdlCompile.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\RdlCompile.compiled
+D:\DNNDispensario\DesktopModules\Dispensario\bin\Turnero.dll.config
+D:\DNNDispensario\DesktopModules\Dispensario\bin\Turnero.dll
+D:\DNNDispensario\DesktopModules\Dispensario\bin\Turnero.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.csprojResolveAssemblyReference.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.csproj.CoreCompileInputs.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.dll
+D:\DNNDispensario\DesktopModules\Dispensario\Turnero\Turnero\obj\Release\Turnero.pdb

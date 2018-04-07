@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Turnero" type="Module" version="03.00.00">
+    <package name="Turnero" type="Module" version="08.00.00">
       <friendlyName>Turnero</friendlyName>
       <description>Christoc.com Turnero module</description>
       <iconFile>Images/icon_extensions.gif</iconFile>

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="HistoriaClinica" type="Module" version="03.00.00">
+    <package name="HistoriaClinica" type="Module" version="06.00.00">
       <friendlyName>HistoriaClinica</friendlyName>
       <description>Christoc.com HistoriaClinica module</description>
       <iconFile>Images/icon_extensions.gif</iconFile>

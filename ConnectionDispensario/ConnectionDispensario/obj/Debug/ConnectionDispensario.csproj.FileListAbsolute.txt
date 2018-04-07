@@ -1,8 +1,7 @@
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\bin\Debug\ConnectionDispensario.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\bin\Debug\ConnectionDispensario.pdb
-C:\Dispensario Arroyo Cabral\bin\ConnectionDispensario.dll.config
-C:\Dispensario Arroyo Cabral\bin\ConnectionDispensario.dll
-C:\Dispensario Arroyo Cabral\bin\ConnectionDispensario.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.csprojResolveAssemblyReference.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.pdb
+D:\DNNDispensario\bin\ConnectionDispensario.dll.config
+D:\DNNDispensario\bin\ConnectionDispensario.dll
+D:\DNNDispensario\bin\ConnectionDispensario.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.csproj.CoreCompileInputs.cache
+D:\DNNDispensario\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.dll
+D:\DNNDispensario\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\ConnectionDispensario\ConnectionDispensario\obj\Debug\ConnectionDispensario.csprojResolveAssemblyReference.cache

@@ -1,6 +1,8 @@
-﻿namespace ConnectionDispensario {
-    
-    
-    public partial class DispensarioACDataSet {
+﻿namespace ConnectionDispensario
+{
+
+
+    public partial class DispensarioACDataSet
+    {
     }
 }

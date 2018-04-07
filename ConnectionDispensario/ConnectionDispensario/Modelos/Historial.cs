@@ -60,12 +60,15 @@ namespace ConnectionDispensario.Modelos
                 if (C["Telephone"] != null) PUV.Add(new ProfileUser("Teléfono", C["Telephone"].PropertyValue));
                 if (C["MP"] != null) PUV.Add(new ProfileUser("M.P.", C["MP"].PropertyValue));
                 if (C["ME"] != null) PUV.Add(new ProfileUser("M.E.", C["ME"].PropertyValue));
-                
-                      
-                      
-                
-                    
-                
+                if (UI.IsInRole("Medico") == true) { PUV.Add(new ProfileUser("Medico", "si")); }
+                if (UI.IsInRole("Enfermero") == true) { PUV.Add(new ProfileUser("Enfermero", "si")); }
+                if (UI.IsInRole("Administrativo") == true) { PUV.Add(new ProfileUser("Administrativo", "si")); }
+
+
+
+
+
+
             }
             return PUV;
 
@@ -86,19 +89,35 @@ namespace ConnectionDispensario.Modelos
         DateTime fecha;
         int iduser;
         int idpaciente;
-        
+        bool IsOdontograma = false;
+        Odontograma Odontog = null;
+        string diagnosticoCensurado;
+        bool censuredpresent = false;
 
         public Historial() { }
 
-        public Historial(string p_diagnostico, int p_iduser, int p_idpaciente) 
+        public Historial(string p_diagnostico, int p_iduser, int p_idpaciente)
         {
             fecha = DateTime.Now;
             diagnostico = p_diagnostico;
             iduser = p_iduser;
             idpaciente = p_idpaciente;
+
         }
 
-        public Historial(DataRow _DR) 
+        public Historial(Odontograma p_O)
+        {
+            ID = 0;
+            idpaciente = p_O.PACIENTEID;
+            iduser = p_O.USERID;
+            fecha = p_O.FECHA;
+            GUID = p_O.UID;
+            diagnostico = "";
+            IsOdontograma = true;
+            Odontog = p_O;
+        }
+
+        public Historial(DataRow _DR)
         {
             ID = int.Parse(_DR["Id"].ToString());
             idpaciente = int.Parse(_DR["IdPaciente"].ToString());
@@ -106,17 +125,36 @@ namespace ConnectionDispensario.Modelos
             fecha = DateTime.Parse(_DR["Fecha"].ToString());
             GUID = _DR["HUID"].ToString();
 
-            diagnostico = _DR["Diagnostico"].ToString().Replace("[LineJump]", "<br />");
+            diagnostico = _DR["Diagnostico"].ToString().Replace("[LineJump]", "<br/>");
+            int firstint = diagnostico.IndexOf('*');
+            int secondint = diagnostico.LastIndexOf('*');
+
+            if (firstint != -1 && secondint != -1)
+            {
+                diagnosticoCensurado = diagnostico.Remove(firstint, (secondint - firstint) + 1);
+                diagnostico = diagnostico.Insert(firstint, "<span style='color:red'> INFORMACION PROTEGIDA:");
+                secondint = diagnostico.LastIndexOf('*');
+                diagnostico = diagnostico.Insert(secondint + 1, "</span>");
+            }
+            else
+            {
+                diagnosticoCensurado = diagnostico;
+            }
             
+            
+
 
         }
 
 
-        
+
 
         public string DIAGNOSTICO { get { return diagnostico; } }
+        public string DIAGNOSTICOCENSURADO { get { return diagnosticoCensurado; } }
         public DateTime FECHA { get { return fecha; } }
         public int IDUSER { get { return iduser; } }
+        public bool ISODONTOGRAMA { get => IsOdontograma; }
+        public Odontograma ODONTOGRAMA { get => Odontog; }
         
 
 

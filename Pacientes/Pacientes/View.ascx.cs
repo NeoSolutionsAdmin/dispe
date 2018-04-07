@@ -158,7 +158,8 @@ namespace Christoc.Modules.Pacientes
 
         private void ConfigTurnero()
         {
-            carouselTurnos.ClientIDMode = System.Web.UI.ClientIDMode.Static;
+            carouselTurnosMedicos.ClientIDMode = System.Web.UI.ClientIDMode.Static;
+            carouselTurnosEnfermeros.ClientIDMode = System.Web.UI.ClientIDMode.Static;
             if (Session["KeyPaciente"] != null)
             {
 
@@ -170,7 +171,7 @@ namespace Christoc.Modules.Pacientes
                     System.Web.UI.HtmlControls.HtmlGenericControl HTML = new System.Web.UI.HtmlControls.HtmlGenericControl("div");
                     HTML.Attributes.Add("Class", "TurnoContainer");
                     
-                    if (UI.IsInRole("Medico") == true)
+                    if (UI.IsInRole("Medico") == true || UI.IsInRole("Enfermero"))
                     {
 
                         List<ProfileUser> PU = ConnectionDispensario.Modelos.ProfileUser.getProfileUser(PortalId, UI.UserID);
@@ -183,11 +184,13 @@ namespace Christoc.Modules.Pacientes
                         DivTurnero.ID = "ContainerTurno" + UI.UserID.ToString();
                         DivTurnero.ClientIDMode = System.Web.UI.ClientIDMode.Static;
 
+                        ButtonTurno.Attributes.Add("class", "BotonAsignaTurno");
                         ButtonTurno.Attributes.Add("Type", "Button");
                         ButtonTurno.Attributes.Add("Value", "Sacar Turno");
                         ButtonTurno.Attributes.Add("UserID", UI.UserID.ToString());
                         ButtonTurno.Attributes.Add("OnClick", "AsignarTurno(this)");
-                        
+
+                        ButtonTurnero.Attributes.Add("class", "BotonAsignaTurno");
                         ButtonTurnero.Attributes.Add("Type", "Button");
                         ButtonTurnero.Attributes.Add("Value", "Turnero");
                         ButtonTurnero.Attributes.Add("UserID", UI.UserID.ToString());
@@ -196,12 +199,20 @@ namespace Christoc.Modules.Pacientes
 
 
                         string ProfileData = "";
+                        string ROL = "";
                         if (PU != null && PU.Count > 0)
                         {
 
                             for (int b = 0; b < PU.Count; b++)
                             {
-                                ProfileData += "<b>" + PU[b].KEY + ":</b>" + PU[b].VALUE + "</br>";
+                                if (PU[b].KEY != "Medico" && PU[b].KEY != "Enfermero")
+                                {
+                                    ProfileData += "<b>" + PU[b].KEY + ":</b>" + PU[b].VALUE + "</br>";
+                                }
+                                
+                                    if (PU[b].KEY == "Medico") { HTML.Attributes["class"] = "TurnoContainerMedico"; }
+                                    if (PU[b].KEY == "Enfermero") { HTML.Attributes["class"] = "TurnoContainerEnfermero"; }
+
                             }
                             DivDatos.InnerHtml = ProfileData;
                         }
@@ -215,7 +226,8 @@ namespace Christoc.Modules.Pacientes
                         HTML.Controls.Add(ButtonTurnero);
                         HTML.Controls.Add(DivTurnero);
 
-                        carouselTurnos.Controls.Add(HTML);
+                        if (UI.IsInRole("Medico")) carouselTurnosMedicos.Controls.Add(HTML);
+                        if (UI.IsInRole("Enfermero")) carouselTurnosEnfermeros.Controls.Add(HTML);
                     }
                 }
             }

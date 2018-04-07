@@ -1,15 +1,17 @@
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Pacientes.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\bin\Pacientes.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.pdb
-C:\Dispensario Arroyo Cabral\bin\Pacientes.dll
-C:\Dispensario Arroyo Cabral\bin\Pacientes.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.csprojResolveAssemblyReference.cache
-C:\Dispensario Arroyo Cabral\bin\module.css
-C:\Dispensario Arroyo Cabral\bin\cancelpaciente.png
-C:\Dispensario Arroyo Cabral\bin\deletepaciente.png
-C:\Dispensario Arroyo Cabral\bin\editpaciente.png
-C:\Dispensario Arroyo Cabral\bin\newpaciente.png
-C:\Dispensario Arroyo Cabral\bin\savepaciente.png
-C:\Dispensario Arroyo Cabral\bin\searchpaciente.png
-C:\Dispensario Arroyo Cabral\bin\uploadpaciente.png
+D:\DNNDispensario\bin\cancelpaciente.png
+D:\DNNDispensario\bin\deletepaciente.png
+D:\DNNDispensario\bin\editpaciente.png
+D:\DNNDispensario\bin\module.css
+D:\DNNDispensario\bin\newpaciente.png
+D:\DNNDispensario\bin\savepaciente.png
+D:\DNNDispensario\bin\searchpaciente.png
+D:\DNNDispensario\bin\uploadpaciente.png
+D:\DNNDispensario\bin\Pacientes.dll.config
+D:\DNNDispensario\bin\Pacientes.dll
+D:\DNNDispensario\bin\Pacientes.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.csproj.CoreCompileInputs.cache
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.dll
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.pdb
+D:\DNNDispensario\bin\Pacientes.dll.CodeAnalysisLog.xml
+D:\DNNDispensario\bin\Pacientes.dll.lastcodeanalysissucceeded
+D:\DNNDispensario\DesktopModules\Dispensario\Pacientes\Pacientes\obj\Debug\Pacientes.csprojResolveAssemblyReference.cache

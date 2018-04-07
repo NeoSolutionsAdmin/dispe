@@ -42,11 +42,11 @@
         </div>
     <div>
     <%
-        if (Request["UIP"] != null) 
+        if (Request["UIP"] != null)
         {
             int IDP = int.Parse(Request["UIP"].ToString());
             List<Turno> MyTurnos = Turno.GetTurnosByUser(IDP);
-            if (MyTurnos != null) 
+            if (MyTurnos != null)
             {
                 Response.Write("<Table>");
                 Response.Write("<tbody>");
@@ -54,22 +54,31 @@
                 Response.Write("<th> Nro. Turno.  </th>");
                 Response.Write("<th> Apellido y Nombre </th>");
                 Response.Write("<th> Estado </th>");
+                Response.Write("<th> Diagnostico Final </th>");
                 Response.Write("</tr>");
-                for (int a = 0; a < MyTurnos.Count; a++) 
+                for (int a = 0; a < MyTurnos.Count; a++)
                 {
-                    
+
                     Response.Write("<tr>");
                     Response.Write("<td>" + MyTurnos[a].IDT + "</td>");
                     Response.Write("<td>" + MyTurnos[a].Pac.APELLIDO + " " + MyTurnos[a].Pac.NOMBRE + "</td>");
                     Response.Write("<td>" + MyTurnos[a].Esstado +  "</td>");
+                    if (MyTurnos[a].DiagnosticoFinal!="")
+                    {
+                        Response.Write("<td>" + MyTurnos[a].DiagnosticoFinal + "</td>");
+                    }
+                    else
+                    {
+                        Response.Write("<td style=\"background-color:black\"> </td>");
+                    }
                     Response.Write("</tr>");
                 }
-                    
+
                 Response.Write("</tbody>");
                 Response.Write("</Table>");
             }
         }
-        
+
          %>
     </div>
     </form>

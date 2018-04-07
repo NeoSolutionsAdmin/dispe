@@ -63,8 +63,15 @@ namespace Christoc.Modules.Turnero
             {
                 
                 NombreMedico.Text = UI.FirstName + " " + UI.LastName;
-                Servicio.Text = UI.Profile.GetPropertyValue("Puesto");
-                Mes.Text = DateTime.Now.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"));
+                    if (UI.Profile.GetPropertyValue("Puesto") != "")
+                    {
+                        Servicio.Text = UI.Profile.GetPropertyValue("Puesto");
+                    }
+                    else
+                    {
+                        Servicio.Text = "No definido";
+                    }
+                    Mes.Text = DateTime.Now.ToString("MMMM", CultureInfo.CreateSpecificCulture("es"));
                 Año.Text = DateTime.Now.Year.ToString();
 
 

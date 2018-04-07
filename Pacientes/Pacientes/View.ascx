@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="View.ascx.cs" Inherits="Christoc.Modules.Pacientes.View" %>
+﻿<%@ control language="C#" autoeventwireup="true" codebehind="View.ascx.cs" inherits="Christoc.Modules.Pacientes.View" %>
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="DotNetNuke" %>
 
@@ -71,9 +71,12 @@
 </div>
 
 
-<div class="DispensarioContainer">
-    <asp:Button ID="btnAbrirTurnero" ClientIDMode="Static" runat="server" Text="Abrir Turnero" CssClass="DispensarioButton DispensarioIconBuscarPaciente" OnClientClick="AbrirTurnero();return false;" />
-    <div id="carouselTurnos" runat="server" class="TurneroContainer">
+<div class="DispensarioContainer" id="TurneroYPersonal">
+    <asp:Button ID="btnAbrirTurneroMedicos" ClientIDMode="Static" runat="server" Text="Consultorio" CssClass="DispensarioButton DispensarioIconBuscarPaciente" OnClientClick="AbrirTurneroMedicos();return false;" />
+    <asp:Button ID="btnAbrirTurneroEnfermeros" ClientIDMode="Static" runat="server" Text="Enfermeria" CssClass="DispensarioButton DispensarioIconBuscarPaciente" OnClientClick="AbrirTurneroEnfermeros();return false;" />
+    <div id="carouselTurnosMedicos" runat="server" class="TurneroContainerMedicos">
+    </div>
+    <div id="carouselTurnosEnfermeros" runat="server" class="TurneroContainerEnfermeros">
     </div>
 </div>
 
@@ -298,7 +301,10 @@
             $(idbtnBorrarPaciente).hide();
             $(idFileUploader).show();
             $(idGallery).show();
+            $("#TurneroYPersonal").show();
+
         } else {
+            $("#TurneroYPersonal").hide();
             HideForm();
             $(idFileUploader).hide();
             $(idGallery).hide();
@@ -325,8 +331,13 @@
         //$('#ContainerTurno' + ID).load('/DesktopModules/Turnero/TurnoMedico.aspx?UIP=' + ID);
     }
 
-    function AbrirTurnero() {
-        $('#carouselTurnos').toggle();
+    function AbrirTurneroMedicos() {
+        $('#carouselTurnosMedicos').toggle();
+        $('#carouselTurnosEnfermeros').hide();
+    }
+    function AbrirTurneroEnfermeros() {
+        $('#carouselTurnosEnfermeros').toggle();
+        $('#carouselTurnosMedicos').hide();
     }
     $('#carouselTurnos').hide();
     if ($('#IdPaciente').val() == "0") {
@@ -343,7 +354,8 @@
     }
 
     setTimeout(CloseMessage, 6000);
-
+    $('#carouselTurnosEnfermeros').hide();
+    $('#carouselTurnosMedicos').hide();
 
 
 </script>

@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Buscar_Paciente_By_ApellidoTableAdapter" GeneratorDataComponentClassName="Buscar_Paciente_By_ApellidoTableAdapter" Name="Buscar_Paciente_By_Apellido" UserDataComponentName="Buscar_Paciente_By_ApellidoTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Buscar_Paciente_By_Apellido" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Buscar_Paciente_By_Apellido" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Buscar_Paciente_By_Apellido</CommandText>
@@ -39,7 +39,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Get_CIE10_by_IdTableAdapter" GeneratorDataComponentClassName="Get_CIE10_by_IdTableAdapter" Name="Get_CIE10_by_Id" UserDataComponentName="Get_CIE10_by_IdTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Get_CIE10_by_Id" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Get_CIE10_by_Id" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Get_CIE10_by_Id</CommandText>
@@ -61,7 +61,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="INSERT_DIAGNOSTICOTableAdapter" GeneratorDataComponentClassName="INSERT_DIAGNOSTICOTableAdapter" Name="INSERT_DIAGNOSTICO" UserDataComponentName="INSERT_DIAGNOSTICOTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.INSERT_DIAGNOSTICO" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.INSERT_DIAGNOSTICO" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.INSERT_DIAGNOSTICO</CommandText>
@@ -86,9 +86,35 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InsertOdontogramaTableAdapter" GeneratorDataComponentClassName="InsertOdontogramaTableAdapter" Name="InsertOdontograma" UserDataComponentName="InsertOdontogramaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.InsertOdontograma" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.InsertOdontograma</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@UserId" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@PacienteId" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@UID" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Fecha" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="UserId" DataSetColumn="UserId" />
+              <Mapping SourceColumn="PacienteId" DataSetColumn="PacienteId" />
+              <Mapping SourceColumn="UID" DataSetColumn="UID" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Search_ObrasSocialTableAdapter" GeneratorDataComponentClassName="Search_ObrasSocialTableAdapter" Name="Search_ObrasSocial" UserDataComponentName="Search_ObrasSocialTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Search_ObrasSocial" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Search_ObrasSocial" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Search_ObrasSocial</CommandText>
@@ -106,9 +132,30 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_AlergiasByIdPacienteTableAdapter" GeneratorDataComponentClassName="Select_AlergiasByIdPacienteTableAdapter" Name="Select_AlergiasByIdPaciente" UserDataComponentName="Select_AlergiasByIdPacienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_AlergiasByIdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Select_AlergiasByIdPaciente</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@idPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
+              <Mapping SourceColumn="Alergia" DataSetColumn="Alergia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_AllTurnosByIdUserTableAdapter" GeneratorDataComponentClassName="Select_AllTurnosByIdUserTableAdapter" Name="Select_AllTurnosByIdUser" UserDataComponentName="Select_AllTurnosByIdUserTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_AllTurnosByIdUser" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_AllTurnosByIdUser" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_AllTurnosByIdUser</CommandText>
@@ -136,9 +183,72 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_APFTableAdapter" GeneratorDataComponentClassName="Select_APFTableAdapter" Name="Select_APF" UserDataComponentName="Select_APFTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_APF" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Select_APF</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
+              <Mapping SourceColumn="Patologia" DataSetColumn="Patologia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_APPTableAdapter" GeneratorDataComponentClassName="Select_APPTableAdapter" Name="Select_APP" UserDataComponentName="Select_APPTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_APP" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Select_APP</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
+              <Mapping SourceColumn="Patologia" DataSetColumn="Patologia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_CirugiasByIdPacienteTableAdapter" GeneratorDataComponentClassName="Select_CirugiasByIdPacienteTableAdapter" Name="Select_CirugiasByIdPaciente" UserDataComponentName="Select_CirugiasByIdPacienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_CirugiasByIdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Select_CirugiasByIdPaciente</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
+              <Mapping SourceColumn="Cirugia" DataSetColumn="Cirugia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_Diagnosticos_By_IdPacienteTableAdapter" GeneratorDataComponentClassName="Select_Diagnosticos_By_IdPacienteTableAdapter" Name="Select_Diagnosticos_By_IdPaciente" UserDataComponentName="Select_Diagnosticos_By_IdPacienteTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_Diagnosticos_By_IdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_Diagnosticos_By_IdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_Diagnosticos_By_IdPaciente</CommandText>
@@ -160,9 +270,30 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_MedicacionHabitualTableAdapter" GeneratorDataComponentClassName="Select_MedicacionHabitualTableAdapter" Name="Select_MedicacionHabitual" UserDataComponentName="Select_MedicacionHabitualTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_MedicacionHabitual" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.Select_MedicacionHabitual</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
+              <Mapping SourceColumn="Medicacion" DataSetColumn="Medicacion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_ObraSocial_By_IDTableAdapter" GeneratorDataComponentClassName="Select_ObraSocial_By_IDTableAdapter" Name="Select_ObraSocial_By_ID" UserDataComponentName="Select_ObraSocial_By_IDTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_ObraSocial_By_ID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_ObraSocial_By_ID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_ObraSocial_By_ID</CommandText>
@@ -180,9 +311,39 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SELECT_PACIENTE_BY_DNITableAdapter" GeneratorDataComponentClassName="SELECT_PACIENTE_BY_DNITableAdapter" Name="SELECT_PACIENTE_BY_DNI" UserDataComponentName="SELECT_PACIENTE_BY_DNITableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.SELECT_PACIENTE_BY_DNI" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.SELECT_PACIENTE_BY_DNI</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@DNI" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="GUID" DataSetColumn="GUID" />
+              <Mapping SourceColumn="Apellido" DataSetColumn="Apellido" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="FechaNacimiento" DataSetColumn="FechaNacimiento" />
+              <Mapping SourceColumn="NroDocumento" DataSetColumn="NroDocumento" />
+              <Mapping SourceColumn="Domicilio" DataSetColumn="Domicilio" />
+              <Mapping SourceColumn="Localidad" DataSetColumn="Localidad" />
+              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
+              <Mapping SourceColumn="IdObraSocial" DataSetColumn="IdObraSocial" />
+              <Mapping SourceColumn="NroObraSocial" DataSetColumn="NroObraSocial" />
+              <Mapping SourceColumn="Sexo" DataSetColumn="Sexo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_Paciente_By_GUITableAdapter" GeneratorDataComponentClassName="Select_Paciente_By_GUITableAdapter" Name="Select_Paciente_By_GUI" UserDataComponentName="Select_Paciente_By_GUITableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_Paciente_By_GUI" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_Paciente_By_GUI" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_Paciente_By_GUI</CommandText>
@@ -212,7 +373,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_PacienteByIDTableAdapter" GeneratorDataComponentClassName="Select_PacienteByIDTableAdapter" Name="Select_PacienteByID" UserDataComponentName="Select_PacienteByIDTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_PacienteByID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_PacienteByID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_PacienteByID</CommandText>
@@ -242,7 +403,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_TurnoByIdTableAdapter" GeneratorDataComponentClassName="Select_TurnoByIdTableAdapter" Name="Select_TurnoById" UserDataComponentName="Select_TurnoByIdTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_TurnoById" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_TurnoById" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_TurnoById</CommandText>
@@ -272,7 +433,7 @@
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_Turnos_By_PeriodTableAdapter" GeneratorDataComponentClassName="Select_Turnos_By_PeriodTableAdapter" Name="Select_Turnos_By_Period" UserDataComponentName="Select_Turnos_By_PeriodTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_Turnos_By_Period" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_Turnos_By_Period" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.Select_Turnos_By_Period</CommandText>
@@ -303,15 +464,15 @@
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SELECT_PACIENTE_BY_DNITableAdapter" GeneratorDataComponentClassName="SELECT_PACIENTE_BY_DNITableAdapter" Name="SELECT_PACIENTE_BY_DNI" UserDataComponentName="SELECT_PACIENTE_BY_DNITableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_DientesByKeyOdontogramaTableAdapter" GeneratorDataComponentClassName="Select_DientesByKeyOdontogramaTableAdapter" Name="Select_DientesByKeyOdontograma" UserDataComponentName="Select_DientesByKeyOdontogramaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.SELECT_PACIENTE_BY_DNI" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_DientesByKeyOdontograma" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                    <CommandText>dbo.SELECT_PACIENTE_BY_DNI</CommandText>
+                    <CommandText>dbo.Select_DientesByKeyOdontograma</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@DNI" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Key" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
@@ -319,47 +480,18 @@
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="GUID" DataSetColumn="GUID" />
-              <Mapping SourceColumn="Apellido" DataSetColumn="Apellido" />
-              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
-              <Mapping SourceColumn="FechaNacimiento" DataSetColumn="FechaNacimiento" />
-              <Mapping SourceColumn="NroDocumento" DataSetColumn="NroDocumento" />
-              <Mapping SourceColumn="Domicilio" DataSetColumn="Domicilio" />
-              <Mapping SourceColumn="Localidad" DataSetColumn="Localidad" />
-              <Mapping SourceColumn="Telefono" DataSetColumn="Telefono" />
-              <Mapping SourceColumn="IdObraSocial" DataSetColumn="IdObraSocial" />
-              <Mapping SourceColumn="NroObraSocial" DataSetColumn="NroObraSocial" />
-              <Mapping SourceColumn="Sexo" DataSetColumn="Sexo" />
+              <Mapping SourceColumn="OdontogramaID" DataSetColumn="OdontogramaID" />
+              <Mapping SourceColumn="DienteID" DataSetColumn="DienteID" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_AlergiasByIdPacienteTableAdapter" GeneratorDataComponentClassName="Select_AlergiasByIdPacienteTableAdapter" Name="Select_AlergiasByIdPaciente" UserDataComponentName="Select_AlergiasByIdPacienteTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_OdontogramasByIdPacienteTableAdapter" GeneratorDataComponentClassName="Select_OdontogramasByIdPacienteTableAdapter" Name="Select_OdontogramasByIdPaciente" UserDataComponentName="Select_OdontogramasByIdPacienteTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_AlergiasByIdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Select_OdontogramasByIdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                    <CommandText>dbo.Select_AlergiasByIdPaciente</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@idPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
-              <Mapping SourceColumn="Alergia" DataSetColumn="Alergia" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_CirugiasByIdPacienteTableAdapter" GeneratorDataComponentClassName="Select_CirugiasByIdPacienteTableAdapter" Name="Select_CirugiasByIdPaciente" UserDataComponentName="Select_CirugiasByIdPacienteTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_CirugiasByIdPaciente" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <SelectCommand>
-                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                    <CommandText>dbo.Select_CirugiasByIdPaciente</CommandText>
+                    <CommandText>dbo.Select_OdontogramasByIdPaciente</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -370,77 +502,27 @@
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
-              <Mapping SourceColumn="Cirugia" DataSetColumn="Cirugia" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_APFTableAdapter" GeneratorDataComponentClassName="Select_APFTableAdapter" Name="Select_APF" UserDataComponentName="Select_APFTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_APF" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <SelectCommand>
-                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                    <CommandText>dbo.Select_APF</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
-              <Mapping SourceColumn="Patologia" DataSetColumn="Patologia" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_APPTableAdapter" GeneratorDataComponentClassName="Select_APPTableAdapter" Name="Select_APP" UserDataComponentName="Select_APPTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_APP" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <SelectCommand>
-                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                    <CommandText>dbo.Select_APP</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
-              <Mapping SourceColumn="Patologia" DataSetColumn="Patologia" />
-            </Mappings>
-            <Sources />
-          </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Select_MedicacionHabitualTableAdapter" GeneratorDataComponentClassName="Select_MedicacionHabitualTableAdapter" Name="Select_MedicacionHabitual" UserDataComponentName="Select_MedicacionHabitualTableAdapter">
-            <MainSource>
-              <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Select_MedicacionHabitual" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <SelectCommand>
-                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                    <CommandText>dbo.Select_MedicacionHabitual</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </MainSource>
-            <Mappings>
-              <Mapping SourceColumn="Id" DataSetColumn="Id" />
-              <Mapping SourceColumn="IdPaciente" DataSetColumn="IdPaciente" />
-              <Mapping SourceColumn="Medicacion" DataSetColumn="Medicacion" />
+              <Mapping SourceColumn="UserId" DataSetColumn="UserId" />
+              <Mapping SourceColumn="PacienteId" DataSetColumn="PacienteId" />
+              <Mapping SourceColumn="UID" DataSetColumn="UID" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
             </Mappings>
             <Sources />
           </TableAdapter>
         </Tables>
         <Sources>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.CancelarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="CancelarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="CancelarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="CancelarConsulta">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Borrar_Medicacion" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Borrar_Medicacion" MethodsParameterType="CLR" Modifier="Public" Name="Borrar_Medicacion" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Borrar_Medicacion">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Borrar_Medicacion</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Id" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.CancelarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="CancelarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="CancelarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="CancelarConsulta">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.CancelarConsulta</CommandText>
@@ -451,7 +533,7 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.ComenzarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ComenzarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="ComenzarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ComenzarConsulta">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.ComenzarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ComenzarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="ComenzarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ComenzarConsulta">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.ComenzarConsulta</CommandText>
@@ -463,7 +545,7 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.DerivarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DerivarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="DerivarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DerivarConsulta">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.DerivarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DerivarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="DerivarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="DerivarConsulta">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.DerivarConsulta</CommandText>
@@ -476,7 +558,7 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.FinalizarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="FinalizarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="FinalizarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FinalizarConsulta">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.FinalizarConsulta" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="FinalizarConsulta" MethodsParameterType="CLR" Modifier="Public" Name="FinalizarConsulta" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="FinalizarConsulta">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.FinalizarConsulta</CommandText>
@@ -488,7 +570,56 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insert_Paciente" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Paciente" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Paciente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="Insert_Paciente">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insert_Alergia" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Alergia" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Alergia" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="Insert_Alergia">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Insert_Alergia</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Alergia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insert_APF" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_APF" MethodsParameterType="CLR" Modifier="Public" Name="Insert_APF" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="Insert_APF">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Insert_APF</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Patologia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insert_APP" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_APP" MethodsParameterType="CLR" Modifier="Public" Name="Insert_APP" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="Insert_APP">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Insert_APP</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Patologia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insert_Diente" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Diente" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Diente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="Insert_Diente">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Insert_Diente</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@OdontogramaID" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@DienteID" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Estado" Precision="0" ProviderType="VarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insert_Paciente" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Paciente" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Paciente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="Insert_Paciente">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.Insert_Paciente</CommandText>
@@ -508,7 +639,7 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insert_Turno" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Turno" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Turno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="Insert_Turno">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insert_Turno" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Turno" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Turno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="Insert_Turno">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.Insert_Turno</CommandText>
@@ -523,7 +654,31 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Update_Diagnostico_In_Turno" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Update_Diagnostico_In_Turno" MethodsParameterType="CLR" Modifier="Public" Name="Update_Diagnostico_In_Turno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="Update_Diagnostico_In_Turno">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insertar_Cirugia" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insertar_Cirugia" MethodsParameterType="CLR" Modifier="Public" Name="Insertar_Cirugia" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="Insertar_Cirugia">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Insertar_Cirugia</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Cirugia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Insertar_Medicacion" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insertar_Medicacion" MethodsParameterType="CLR" Modifier="Public" Name="Insertar_Medicacion" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="Insertar_Medicacion">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.Insertar_Medicacion</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Medicacion" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Update_Diagnostico_In_Turno" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Update_Diagnostico_In_Turno" MethodsParameterType="CLR" Modifier="Public" Name="Update_Diagnostico_In_Turno" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="Update_Diagnostico_In_Turno">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.Update_Diagnostico_In_Turno</CommandText>
@@ -537,7 +692,7 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Update_Paciente" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Update_Paciente" MethodsParameterType="CLR" Modifier="Public" Name="Update_Paciente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="Update_Paciente">
+          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="SistemaDispensario.dbo.Update_Paciente" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Update_Paciente" MethodsParameterType="CLR" Modifier="Public" Name="Update_Paciente" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy14" UserSourceName="Update_Paciente">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.Update_Paciente</CommandText>
@@ -558,77 +713,6 @@
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insert_Alergia" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_Alergia" MethodsParameterType="CLR" Modifier="Public" Name="Insert_Alergia" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="Insert_Alergia">
-            <SelectCommand>
-              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                <CommandText>dbo.Insert_Alergia</CommandText>
-                <Parameters>
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Alergia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
-                </Parameters>
-              </DbCommand>
-            </SelectCommand>
-          </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insertar_Cirugia" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insertar_Cirugia" MethodsParameterType="CLR" Modifier="Public" Name="Insertar_Cirugia" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="Insertar_Cirugia">
-            <SelectCommand>
-              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                <CommandText>dbo.Insertar_Cirugia</CommandText>
-                <Parameters>
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Cirugia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
-                </Parameters>
-              </DbCommand>
-            </SelectCommand>
-          </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insert_APF" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_APF" MethodsParameterType="CLR" Modifier="Public" Name="Insert_APF" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="Insert_APF">
-            <SelectCommand>
-              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                <CommandText>dbo.Insert_APF</CommandText>
-                <Parameters>
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Patologia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
-                </Parameters>
-              </DbCommand>
-            </SelectCommand>
-          </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insert_APP" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insert_APP" MethodsParameterType="CLR" Modifier="Public" Name="Insert_APP" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="Insert_APP">
-            <SelectCommand>
-              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                <CommandText>dbo.Insert_APP</CommandText>
-                <Parameters>
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Patologia" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
-                </Parameters>
-              </DbCommand>
-            </SelectCommand>
-          </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Borrar_Medicacion" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Borrar_Medicacion" MethodsParameterType="CLR" Modifier="Public" Name="Borrar_Medicacion" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="Borrar_Medicacion">
-            <SelectCommand>
-              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                <CommandText>dbo.Borrar_Medicacion</CommandText>
-                <Parameters>
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@Id" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                </Parameters>
-              </DbCommand>
-            </SelectCommand>
-          </DbSource>
-          <DbSource ConnectionRef="DispensarioACConnectionString (Settings)" DbObjectName="DispensarioAC.dbo.Insertar_Medicacion" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="Insertar_Medicacion" MethodsParameterType="CLR" Modifier="Public" Name="Insertar_Medicacion" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="Insertar_Medicacion">
-            <SelectCommand>
-              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
-                <CommandText>dbo.Insertar_Medicacion</CommandText>
-                <Parameters>
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bigint" DbType="Int64" Direction="Input" ParameterName="@IdPaciente" Precision="19" ProviderType="BigInt" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
-                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Medicacion" Precision="0" ProviderType="VarChar" Scale="0" Size="255" SourceColumnNullMapping="false" SourceVersion="Current" />
-                </Parameters>
-              </DbCommand>
-            </SelectCommand>
-          </DbSource>
         </Sources>
       </DataSource>
     </xs:appinfo>
@@ -636,7 +720,15 @@
   <xs:element name="DispensarioACDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DispensarioACDataSet" msprop:Generator_UserDSName="DispensarioACDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Buscar_Paciente_By_Apellido" msprop:Generator_TableClassName="Buscar_Paciente_By_ApellidoDataTable" msprop:Generator_TableVarName="tableBuscar_Paciente_By_Apellido" msprop:Generator_RowChangedName="Buscar_Paciente_By_ApellidoRowChanged" msprop:Generator_TablePropName="Buscar_Paciente_By_Apellido" msprop:Generator_RowDeletingName="Buscar_Paciente_By_ApellidoRowDeleting" msprop:Generator_RowChangingName="Buscar_Paciente_By_ApellidoRowChanging" msprop:Generator_RowEvHandlerName="Buscar_Paciente_By_ApellidoRowChangeEventHandler" msprop:Generator_RowDeletedName="Buscar_Paciente_By_ApellidoRowDeleted" msprop:Generator_RowClassName="Buscar_Paciente_By_ApellidoRow" msprop:Generator_UserTableName="Buscar_Paciente_By_Apellido" msprop:Generator_RowEvArgName="Buscar_Paciente_By_ApellidoRowChangeEvent">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Buscar_Paciente_By_Apellido" msprop:Generator_TableClassName="Buscar_Paciente_By_ApellidoDataTable" msprop:Generator_TableVarName="tableBuscar_Paciente_By_Apellido" msprop:Generator_TablePropName="Buscar_Paciente_By_Apellido" msprop:Generator_RowDeletingName="Buscar_Paciente_By_ApellidoRowDeleting" msprop:Generator_RowChangingName="Buscar_Paciente_By_ApellidoRowChanging" msprop:Generator_RowEvHandlerName="Buscar_Paciente_By_ApellidoRowChangeEventHandler" msprop:Generator_RowDeletedName="Buscar_Paciente_By_ApellidoRowDeleted" msprop:Generator_UserTableName="Buscar_Paciente_By_Apellido" msprop:Generator_RowChangedName="Buscar_Paciente_By_ApellidoRowChanged" msprop:Generator_RowEvArgName="Buscar_Paciente_By_ApellidoRowChangeEvent" msprop:Generator_RowClassName="Buscar_Paciente_By_ApellidoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -708,7 +800,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Get_CIE10_by_Id" msprop:Generator_TableClassName="Get_CIE10_by_IdDataTable" msprop:Generator_TableVarName="tableGet_CIE10_by_Id" msprop:Generator_RowChangedName="Get_CIE10_by_IdRowChanged" msprop:Generator_TablePropName="Get_CIE10_by_Id" msprop:Generator_RowDeletingName="Get_CIE10_by_IdRowDeleting" msprop:Generator_RowChangingName="Get_CIE10_by_IdRowChanging" msprop:Generator_RowEvHandlerName="Get_CIE10_by_IdRowChangeEventHandler" msprop:Generator_RowDeletedName="Get_CIE10_by_IdRowDeleted" msprop:Generator_RowClassName="Get_CIE10_by_IdRow" msprop:Generator_UserTableName="Get_CIE10_by_Id" msprop:Generator_RowEvArgName="Get_CIE10_by_IdRowChangeEvent">
+        <xs:element name="Get_CIE10_by_Id" msprop:Generator_TableClassName="Get_CIE10_by_IdDataTable" msprop:Generator_TableVarName="tableGet_CIE10_by_Id" msprop:Generator_TablePropName="Get_CIE10_by_Id" msprop:Generator_RowDeletingName="Get_CIE10_by_IdRowDeleting" msprop:Generator_RowChangingName="Get_CIE10_by_IdRowChanging" msprop:Generator_RowEvHandlerName="Get_CIE10_by_IdRowChangeEventHandler" msprop:Generator_RowDeletedName="Get_CIE10_by_IdRowDeleted" msprop:Generator_UserTableName="Get_CIE10_by_Id" msprop:Generator_RowChangedName="Get_CIE10_by_IdRowChanged" msprop:Generator_RowEvArgName="Get_CIE10_by_IdRowChangeEvent" msprop:Generator_RowClassName="Get_CIE10_by_IdRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -730,7 +822,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="INSERT_DIAGNOSTICO" msprop:Generator_TableClassName="INSERT_DIAGNOSTICODataTable" msprop:Generator_TableVarName="tableINSERT_DIAGNOSTICO" msprop:Generator_RowChangedName="INSERT_DIAGNOSTICORowChanged" msprop:Generator_TablePropName="INSERT_DIAGNOSTICO" msprop:Generator_RowDeletingName="INSERT_DIAGNOSTICORowDeleting" msprop:Generator_RowChangingName="INSERT_DIAGNOSTICORowChanging" msprop:Generator_RowEvHandlerName="INSERT_DIAGNOSTICORowChangeEventHandler" msprop:Generator_RowDeletedName="INSERT_DIAGNOSTICORowDeleted" msprop:Generator_RowClassName="INSERT_DIAGNOSTICORow" msprop:Generator_UserTableName="INSERT_DIAGNOSTICO" msprop:Generator_RowEvArgName="INSERT_DIAGNOSTICORowChangeEvent">
+        <xs:element name="INSERT_DIAGNOSTICO" msprop:Generator_TableClassName="INSERT_DIAGNOSTICODataTable" msprop:Generator_TableVarName="tableINSERT_DIAGNOSTICO" msprop:Generator_TablePropName="INSERT_DIAGNOSTICO" msprop:Generator_RowDeletingName="INSERT_DIAGNOSTICORowDeleting" msprop:Generator_RowChangingName="INSERT_DIAGNOSTICORowChanging" msprop:Generator_RowEvHandlerName="INSERT_DIAGNOSTICORowChangeEventHandler" msprop:Generator_RowDeletedName="INSERT_DIAGNOSTICORowDeleted" msprop:Generator_UserTableName="INSERT_DIAGNOSTICO" msprop:Generator_RowChangedName="INSERT_DIAGNOSTICORowChanged" msprop:Generator_RowEvArgName="INSERT_DIAGNOSTICORowChangeEvent" msprop:Generator_RowClassName="INSERT_DIAGNOSTICORow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -754,7 +846,24 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Search_ObrasSocial" msprop:Generator_TableClassName="Search_ObrasSocialDataTable" msprop:Generator_TableVarName="tableSearch_ObrasSocial" msprop:Generator_RowChangedName="Search_ObrasSocialRowChanged" msprop:Generator_TablePropName="Search_ObrasSocial" msprop:Generator_RowDeletingName="Search_ObrasSocialRowDeleting" msprop:Generator_RowChangingName="Search_ObrasSocialRowChanging" msprop:Generator_RowEvHandlerName="Search_ObrasSocialRowChangeEventHandler" msprop:Generator_RowDeletedName="Search_ObrasSocialRowDeleted" msprop:Generator_RowClassName="Search_ObrasSocialRow" msprop:Generator_UserTableName="Search_ObrasSocial" msprop:Generator_RowEvArgName="Search_ObrasSocialRowChangeEvent">
+        <xs:element name="InsertOdontograma" msprop:Generator_TableClassName="InsertOdontogramaDataTable" msprop:Generator_TableVarName="tableInsertOdontograma" msprop:Generator_TablePropName="InsertOdontograma" msprop:Generator_RowDeletingName="InsertOdontogramaRowDeleting" msprop:Generator_RowChangingName="InsertOdontogramaRowChanging" msprop:Generator_RowEvHandlerName="InsertOdontogramaRowChangeEventHandler" msprop:Generator_RowDeletedName="InsertOdontogramaRowDeleted" msprop:Generator_UserTableName="InsertOdontograma" msprop:Generator_RowChangedName="InsertOdontogramaRowChanged" msprop:Generator_RowEvArgName="InsertOdontogramaRowChangeEvent" msprop:Generator_RowClassName="InsertOdontogramaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:long" />
+              <xs:element name="PacienteId" msprop:Generator_ColumnVarNameInTable="columnPacienteId" msprop:Generator_ColumnPropNameInRow="PacienteId" msprop:Generator_ColumnPropNameInTable="PacienteIdColumn" msprop:Generator_UserColumnName="PacienteId" type="xs:long" />
+              <xs:element name="UID" msprop:Generator_ColumnVarNameInTable="columnUID" msprop:Generator_ColumnPropNameInRow="UID" msprop:Generator_ColumnPropNameInTable="UIDColumn" msprop:Generator_UserColumnName="UID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Search_ObrasSocial" msprop:Generator_TableClassName="Search_ObrasSocialDataTable" msprop:Generator_TableVarName="tableSearch_ObrasSocial" msprop:Generator_TablePropName="Search_ObrasSocial" msprop:Generator_RowDeletingName="Search_ObrasSocialRowDeleting" msprop:Generator_RowChangingName="Search_ObrasSocialRowChanging" msprop:Generator_RowEvHandlerName="Search_ObrasSocialRowChangeEventHandler" msprop:Generator_RowDeletedName="Search_ObrasSocialRowDeleted" msprop:Generator_UserTableName="Search_ObrasSocial" msprop:Generator_RowChangedName="Search_ObrasSocialRowChanged" msprop:Generator_RowEvArgName="Search_ObrasSocialRowChangeEvent" msprop:Generator_RowClassName="Search_ObrasSocialRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -768,7 +877,22 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Select_AllTurnosByIdUser" msprop:Generator_TableClassName="Select_AllTurnosByIdUserDataTable" msprop:Generator_TableVarName="tableSelect_AllTurnosByIdUser" msprop:Generator_RowChangedName="Select_AllTurnosByIdUserRowChanged" msprop:Generator_TablePropName="Select_AllTurnosByIdUser" msprop:Generator_RowDeletingName="Select_AllTurnosByIdUserRowDeleting" msprop:Generator_RowChangingName="Select_AllTurnosByIdUserRowChanging" msprop:Generator_RowEvHandlerName="Select_AllTurnosByIdUserRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_AllTurnosByIdUserRowDeleted" msprop:Generator_RowClassName="Select_AllTurnosByIdUserRow" msprop:Generator_UserTableName="Select_AllTurnosByIdUser" msprop:Generator_RowEvArgName="Select_AllTurnosByIdUserRowChangeEvent">
+        <xs:element name="Select_AlergiasByIdPaciente" msprop:Generator_TableClassName="Select_AlergiasByIdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_AlergiasByIdPaciente" msprop:Generator_TablePropName="Select_AlergiasByIdPaciente" msprop:Generator_RowDeletingName="Select_AlergiasByIdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_AlergiasByIdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_AlergiasByIdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_AlergiasByIdPacienteRowDeleted" msprop:Generator_UserTableName="Select_AlergiasByIdPaciente" msprop:Generator_RowChangedName="Select_AlergiasByIdPacienteRowChanged" msprop:Generator_RowEvArgName="Select_AlergiasByIdPacienteRowChangeEvent" msprop:Generator_RowClassName="Select_AlergiasByIdPacienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
+              <xs:element name="Alergia" msprop:Generator_ColumnVarNameInTable="columnAlergia" msprop:Generator_ColumnPropNameInRow="Alergia" msprop:Generator_ColumnPropNameInTable="AlergiaColumn" msprop:Generator_UserColumnName="Alergia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_AllTurnosByIdUser" msprop:Generator_TableClassName="Select_AllTurnosByIdUserDataTable" msprop:Generator_TableVarName="tableSelect_AllTurnosByIdUser" msprop:Generator_TablePropName="Select_AllTurnosByIdUser" msprop:Generator_RowDeletingName="Select_AllTurnosByIdUserRowDeleting" msprop:Generator_RowChangingName="Select_AllTurnosByIdUserRowChanging" msprop:Generator_RowEvHandlerName="Select_AllTurnosByIdUserRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_AllTurnosByIdUserRowDeleted" msprop:Generator_UserTableName="Select_AllTurnosByIdUser" msprop:Generator_RowChangedName="Select_AllTurnosByIdUserRowChanged" msprop:Generator_RowEvArgName="Select_AllTurnosByIdUserRowChangeEvent" msprop:Generator_RowClassName="Select_AllTurnosByIdUserRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -804,7 +928,52 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Select_Diagnosticos_By_IdPaciente" msprop:Generator_TableClassName="Select_Diagnosticos_By_IdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_Diagnosticos_By_IdPaciente" msprop:Generator_RowChangedName="Select_Diagnosticos_By_IdPacienteRowChanged" msprop:Generator_TablePropName="Select_Diagnosticos_By_IdPaciente" msprop:Generator_RowDeletingName="Select_Diagnosticos_By_IdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_Diagnosticos_By_IdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_Diagnosticos_By_IdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_Diagnosticos_By_IdPacienteRowDeleted" msprop:Generator_RowClassName="Select_Diagnosticos_By_IdPacienteRow" msprop:Generator_UserTableName="Select_Diagnosticos_By_IdPaciente" msprop:Generator_RowEvArgName="Select_Diagnosticos_By_IdPacienteRowChangeEvent">
+        <xs:element name="Select_APF" msprop:Generator_TableClassName="Select_APFDataTable" msprop:Generator_TableVarName="tableSelect_APF" msprop:Generator_TablePropName="Select_APF" msprop:Generator_RowDeletingName="Select_APFRowDeleting" msprop:Generator_RowChangingName="Select_APFRowChanging" msprop:Generator_RowEvHandlerName="Select_APFRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_APFRowDeleted" msprop:Generator_UserTableName="Select_APF" msprop:Generator_RowChangedName="Select_APFRowChanged" msprop:Generator_RowEvArgName="Select_APFRowChangeEvent" msprop:Generator_RowClassName="Select_APFRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
+              <xs:element name="Patologia" msprop:Generator_ColumnVarNameInTable="columnPatologia" msprop:Generator_ColumnPropNameInRow="Patologia" msprop:Generator_ColumnPropNameInTable="PatologiaColumn" msprop:Generator_UserColumnName="Patologia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_APP" msprop:Generator_TableClassName="Select_APPDataTable" msprop:Generator_TableVarName="tableSelect_APP" msprop:Generator_TablePropName="Select_APP" msprop:Generator_RowDeletingName="Select_APPRowDeleting" msprop:Generator_RowChangingName="Select_APPRowChanging" msprop:Generator_RowEvHandlerName="Select_APPRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_APPRowDeleted" msprop:Generator_UserTableName="Select_APP" msprop:Generator_RowChangedName="Select_APPRowChanged" msprop:Generator_RowEvArgName="Select_APPRowChangeEvent" msprop:Generator_RowClassName="Select_APPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
+              <xs:element name="Patologia" msprop:Generator_ColumnVarNameInTable="columnPatologia" msprop:Generator_ColumnPropNameInRow="Patologia" msprop:Generator_ColumnPropNameInTable="PatologiaColumn" msprop:Generator_UserColumnName="Patologia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_CirugiasByIdPaciente" msprop:Generator_TableClassName="Select_CirugiasByIdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_CirugiasByIdPaciente" msprop:Generator_TablePropName="Select_CirugiasByIdPaciente" msprop:Generator_RowDeletingName="Select_CirugiasByIdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_CirugiasByIdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_CirugiasByIdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_CirugiasByIdPacienteRowDeleted" msprop:Generator_UserTableName="Select_CirugiasByIdPaciente" msprop:Generator_RowChangedName="Select_CirugiasByIdPacienteRowChanged" msprop:Generator_RowEvArgName="Select_CirugiasByIdPacienteRowChangeEvent" msprop:Generator_RowClassName="Select_CirugiasByIdPacienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
+              <xs:element name="Cirugia" msprop:Generator_ColumnVarNameInTable="columnCirugia" msprop:Generator_ColumnPropNameInRow="Cirugia" msprop:Generator_ColumnPropNameInTable="CirugiaColumn" msprop:Generator_UserColumnName="Cirugia">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_Diagnosticos_By_IdPaciente" msprop:Generator_TableClassName="Select_Diagnosticos_By_IdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_Diagnosticos_By_IdPaciente" msprop:Generator_TablePropName="Select_Diagnosticos_By_IdPaciente" msprop:Generator_RowDeletingName="Select_Diagnosticos_By_IdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_Diagnosticos_By_IdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_Diagnosticos_By_IdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_Diagnosticos_By_IdPacienteRowDeleted" msprop:Generator_UserTableName="Select_Diagnosticos_By_IdPaciente" msprop:Generator_RowChangedName="Select_Diagnosticos_By_IdPacienteRowChanged" msprop:Generator_RowEvArgName="Select_Diagnosticos_By_IdPacienteRowChangeEvent" msprop:Generator_RowClassName="Select_Diagnosticos_By_IdPacienteRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -828,7 +997,22 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Select_ObraSocial_By_ID" msprop:Generator_TableClassName="Select_ObraSocial_By_IDDataTable" msprop:Generator_TableVarName="tableSelect_ObraSocial_By_ID" msprop:Generator_RowChangedName="Select_ObraSocial_By_IDRowChanged" msprop:Generator_TablePropName="Select_ObraSocial_By_ID" msprop:Generator_RowDeletingName="Select_ObraSocial_By_IDRowDeleting" msprop:Generator_RowChangingName="Select_ObraSocial_By_IDRowChanging" msprop:Generator_RowEvHandlerName="Select_ObraSocial_By_IDRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_ObraSocial_By_IDRowDeleted" msprop:Generator_RowClassName="Select_ObraSocial_By_IDRow" msprop:Generator_UserTableName="Select_ObraSocial_By_ID" msprop:Generator_RowEvArgName="Select_ObraSocial_By_IDRowChangeEvent">
+        <xs:element name="Select_MedicacionHabitual" msprop:Generator_TableClassName="Select_MedicacionHabitualDataTable" msprop:Generator_TableVarName="tableSelect_MedicacionHabitual" msprop:Generator_TablePropName="Select_MedicacionHabitual" msprop:Generator_RowDeletingName="Select_MedicacionHabitualRowDeleting" msprop:Generator_RowChangingName="Select_MedicacionHabitualRowChanging" msprop:Generator_RowEvHandlerName="Select_MedicacionHabitualRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_MedicacionHabitualRowDeleted" msprop:Generator_UserTableName="Select_MedicacionHabitual" msprop:Generator_RowChangedName="Select_MedicacionHabitualRowChanged" msprop:Generator_RowEvArgName="Select_MedicacionHabitualRowChangeEvent" msprop:Generator_RowClassName="Select_MedicacionHabitualRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
+              <xs:element name="Medicacion" msprop:Generator_ColumnVarNameInTable="columnMedicacion" msprop:Generator_ColumnPropNameInRow="Medicacion" msprop:Generator_ColumnPropNameInTable="MedicacionColumn" msprop:Generator_UserColumnName="Medicacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_ObraSocial_By_ID" msprop:Generator_TableClassName="Select_ObraSocial_By_IDDataTable" msprop:Generator_TableVarName="tableSelect_ObraSocial_By_ID" msprop:Generator_TablePropName="Select_ObraSocial_By_ID" msprop:Generator_RowDeletingName="Select_ObraSocial_By_IDRowDeleting" msprop:Generator_RowChangingName="Select_ObraSocial_By_IDRowChanging" msprop:Generator_RowEvHandlerName="Select_ObraSocial_By_IDRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_ObraSocial_By_IDRowDeleted" msprop:Generator_UserTableName="Select_ObraSocial_By_ID" msprop:Generator_RowChangedName="Select_ObraSocial_By_IDRowChanged" msprop:Generator_RowEvArgName="Select_ObraSocial_By_IDRowChangeEvent" msprop:Generator_RowClassName="Select_ObraSocial_By_IDRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
@@ -839,222 +1023,6 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_Paciente_By_GUI" msprop:Generator_TableClassName="Select_Paciente_By_GUIDataTable" msprop:Generator_TableVarName="tableSelect_Paciente_By_GUI" msprop:Generator_RowChangedName="Select_Paciente_By_GUIRowChanged" msprop:Generator_TablePropName="Select_Paciente_By_GUI" msprop:Generator_RowDeletingName="Select_Paciente_By_GUIRowDeleting" msprop:Generator_RowChangingName="Select_Paciente_By_GUIRowChanging" msprop:Generator_RowEvHandlerName="Select_Paciente_By_GUIRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_Paciente_By_GUIRowDeleted" msprop:Generator_RowClassName="Select_Paciente_By_GUIRow" msprop:Generator_UserTableName="Select_Paciente_By_GUI" msprop:Generator_RowEvArgName="Select_Paciente_By_GUIRowChangeEvent">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="GUID" msprop:Generator_ColumnVarNameInTable="columnGUID" msprop:Generator_ColumnPropNameInRow="GUID" msprop:Generator_ColumnPropNameInTable="GUIDColumn" msprop:Generator_UserColumnName="GUID">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Apellido" msprop:Generator_ColumnVarNameInTable="columnApellido" msprop:Generator_ColumnPropNameInRow="Apellido" msprop:Generator_ColumnPropNameInTable="ApellidoColumn" msprop:Generator_UserColumnName="Apellido">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="FechaNacimiento" msprop:Generator_ColumnVarNameInTable="columnFechaNacimiento" msprop:Generator_ColumnPropNameInRow="FechaNacimiento" msprop:Generator_ColumnPropNameInTable="FechaNacimientoColumn" msprop:Generator_UserColumnName="FechaNacimiento" type="xs:dateTime" />
-              <xs:element name="NroDocumento" msprop:Generator_ColumnVarNameInTable="columnNroDocumento" msprop:Generator_ColumnPropNameInRow="NroDocumento" msprop:Generator_ColumnPropNameInTable="NroDocumentoColumn" msprop:Generator_UserColumnName="NroDocumento">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="9" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Domicilio" msprop:Generator_ColumnVarNameInTable="columnDomicilio" msprop:Generator_ColumnPropNameInRow="Domicilio" msprop:Generator_ColumnPropNameInTable="DomicilioColumn" msprop:Generator_UserColumnName="Domicilio">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Localidad" msprop:Generator_ColumnVarNameInTable="columnLocalidad" msprop:Generator_ColumnPropNameInRow="Localidad" msprop:Generator_ColumnPropNameInTable="LocalidadColumn" msprop:Generator_UserColumnName="Localidad">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="15" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="IdObraSocial" msprop:Generator_ColumnVarNameInTable="columnIdObraSocial" msprop:Generator_ColumnPropNameInRow="IdObraSocial" msprop:Generator_ColumnPropNameInTable="IdObraSocialColumn" msprop:Generator_UserColumnName="IdObraSocial" type="xs:long" />
-              <xs:element name="NroObraSocial" msprop:Generator_ColumnVarNameInTable="columnNroObraSocial" msprop:Generator_ColumnPropNameInRow="NroObraSocial" msprop:Generator_ColumnPropNameInTable="NroObraSocialColumn" msprop:Generator_UserColumnName="NroObraSocial">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_PacienteByID" msprop:Generator_TableClassName="Select_PacienteByIDDataTable" msprop:Generator_TableVarName="tableSelect_PacienteByID" msprop:Generator_RowChangedName="Select_PacienteByIDRowChanged" msprop:Generator_TablePropName="Select_PacienteByID" msprop:Generator_RowDeletingName="Select_PacienteByIDRowDeleting" msprop:Generator_RowChangingName="Select_PacienteByIDRowChanging" msprop:Generator_RowEvHandlerName="Select_PacienteByIDRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_PacienteByIDRowDeleted" msprop:Generator_RowClassName="Select_PacienteByIDRow" msprop:Generator_UserTableName="Select_PacienteByID" msprop:Generator_RowEvArgName="Select_PacienteByIDRowChangeEvent">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="GUID" msprop:Generator_ColumnVarNameInTable="columnGUID" msprop:Generator_ColumnPropNameInRow="GUID" msprop:Generator_ColumnPropNameInTable="GUIDColumn" msprop:Generator_UserColumnName="GUID">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Apellido" msprop:Generator_ColumnVarNameInTable="columnApellido" msprop:Generator_ColumnPropNameInRow="Apellido" msprop:Generator_ColumnPropNameInTable="ApellidoColumn" msprop:Generator_UserColumnName="Apellido">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="FechaNacimiento" msprop:Generator_ColumnVarNameInTable="columnFechaNacimiento" msprop:Generator_ColumnPropNameInRow="FechaNacimiento" msprop:Generator_ColumnPropNameInTable="FechaNacimientoColumn" msprop:Generator_UserColumnName="FechaNacimiento" type="xs:dateTime" />
-              <xs:element name="NroDocumento" msprop:Generator_ColumnVarNameInTable="columnNroDocumento" msprop:Generator_ColumnPropNameInRow="NroDocumento" msprop:Generator_ColumnPropNameInTable="NroDocumentoColumn" msprop:Generator_UserColumnName="NroDocumento">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="9" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Domicilio" msprop:Generator_ColumnVarNameInTable="columnDomicilio" msprop:Generator_ColumnPropNameInRow="Domicilio" msprop:Generator_ColumnPropNameInTable="DomicilioColumn" msprop:Generator_UserColumnName="Domicilio">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Localidad" msprop:Generator_ColumnVarNameInTable="columnLocalidad" msprop:Generator_ColumnPropNameInRow="Localidad" msprop:Generator_ColumnPropNameInTable="LocalidadColumn" msprop:Generator_UserColumnName="Localidad">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="15" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="IdObraSocial" msprop:Generator_ColumnVarNameInTable="columnIdObraSocial" msprop:Generator_ColumnPropNameInRow="IdObraSocial" msprop:Generator_ColumnPropNameInTable="IdObraSocialColumn" msprop:Generator_UserColumnName="IdObraSocial" type="xs:long" />
-              <xs:element name="NroObraSocial" msprop:Generator_ColumnVarNameInTable="columnNroObraSocial" msprop:Generator_ColumnPropNameInRow="NroObraSocial" msprop:Generator_ColumnPropNameInTable="NroObraSocialColumn" msprop:Generator_UserColumnName="NroObraSocial">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_TurnoById" msprop:Generator_TableClassName="Select_TurnoByIdDataTable" msprop:Generator_TableVarName="tableSelect_TurnoById" msprop:Generator_RowChangedName="Select_TurnoByIdRowChanged" msprop:Generator_TablePropName="Select_TurnoById" msprop:Generator_RowDeletingName="Select_TurnoByIdRowDeleting" msprop:Generator_RowChangingName="Select_TurnoByIdRowChanging" msprop:Generator_RowEvHandlerName="Select_TurnoByIdRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_TurnoByIdRowDeleted" msprop:Generator_RowClassName="Select_TurnoByIdRow" msprop:Generator_UserTableName="Select_TurnoById" msprop:Generator_RowEvArgName="Select_TurnoByIdRowChangeEvent">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:long" />
-              <xs:element name="PacienteId" msprop:Generator_ColumnVarNameInTable="columnPacienteId" msprop:Generator_ColumnPropNameInRow="PacienteId" msprop:Generator_ColumnPropNameInTable="PacienteIdColumn" msprop:Generator_UserColumnName="PacienteId" type="xs:long" />
-              <xs:element name="HoraRecepcion" msprop:Generator_ColumnVarNameInTable="columnHoraRecepcion" msprop:Generator_ColumnPropNameInRow="HoraRecepcion" msprop:Generator_ColumnPropNameInTable="HoraRecepcionColumn" msprop:Generator_UserColumnName="HoraRecepcion" type="xs:dateTime" />
-              <xs:element name="HoraComienzoConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraComienzoConsulta" msprop:Generator_ColumnPropNameInRow="HoraComienzoConsulta" msprop:Generator_ColumnPropNameInTable="HoraComienzoConsultaColumn" msprop:Generator_UserColumnName="HoraComienzoConsulta" type="xs:dateTime" />
-              <xs:element name="HoraFinalConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraFinalConsulta" msprop:Generator_ColumnPropNameInRow="HoraFinalConsulta" msprop:Generator_ColumnPropNameInTable="HoraFinalConsultaColumn" msprop:Generator_UserColumnName="HoraFinalConsulta" type="xs:dateTime" />
-              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="IdDerivado" msprop:Generator_ColumnVarNameInTable="columnIdDerivado" msprop:Generator_ColumnPropNameInRow="IdDerivado" msprop:Generator_ColumnPropNameInTable="IdDerivadoColumn" msprop:Generator_UserColumnName="IdDerivado" type="xs:long" />
-              <xs:element name="Indicaciones" msprop:Generator_ColumnVarNameInTable="columnIndicaciones" msprop:Generator_ColumnPropNameInRow="Indicaciones" msprop:Generator_ColumnPropNameInTable="IndicacionesColumn" msprop:Generator_UserColumnName="Indicaciones">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="DiagnosticoFinal" msprop:Generator_ColumnVarNameInTable="columnDiagnosticoFinal" msprop:Generator_ColumnPropNameInRow="DiagnosticoFinal" msprop:Generator_ColumnPropNameInTable="DiagnosticoFinalColumn" msprop:Generator_UserColumnName="DiagnosticoFinal" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="CIE10" msprop:Generator_ColumnVarNameInTable="columnCIE10" msprop:Generator_ColumnPropNameInRow="CIE10" msprop:Generator_ColumnPropNameInTable="CIE10Column" msprop:Generator_UserColumnName="CIE10" type="xs:long" minOccurs="0" />
-              <xs:element name="ControlEmbarazo" msprop:Generator_ColumnVarNameInTable="columnControlEmbarazo" msprop:Generator_ColumnPropNameInRow="ControlEmbarazo" msprop:Generator_ColumnPropNameInTable="ControlEmbarazoColumn" msprop:Generator_UserColumnName="ControlEmbarazo" type="xs:boolean" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_Turnos_By_Period" msprop:Generator_TableClassName="Select_Turnos_By_PeriodDataTable" msprop:Generator_TableVarName="tableSelect_Turnos_By_Period" msprop:Generator_RowChangedName="Select_Turnos_By_PeriodRowChanged" msprop:Generator_TablePropName="Select_Turnos_By_Period" msprop:Generator_RowDeletingName="Select_Turnos_By_PeriodRowDeleting" msprop:Generator_RowChangingName="Select_Turnos_By_PeriodRowChanging" msprop:Generator_RowEvHandlerName="Select_Turnos_By_PeriodRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_Turnos_By_PeriodRowDeleted" msprop:Generator_RowClassName="Select_Turnos_By_PeriodRow" msprop:Generator_UserTableName="Select_Turnos_By_Period" msprop:Generator_RowEvArgName="Select_Turnos_By_PeriodRowChangeEvent">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:long" />
-              <xs:element name="PacienteId" msprop:Generator_ColumnVarNameInTable="columnPacienteId" msprop:Generator_ColumnPropNameInRow="PacienteId" msprop:Generator_ColumnPropNameInTable="PacienteIdColumn" msprop:Generator_UserColumnName="PacienteId" type="xs:long" />
-              <xs:element name="HoraRecepcion" msprop:Generator_ColumnVarNameInTable="columnHoraRecepcion" msprop:Generator_ColumnPropNameInRow="HoraRecepcion" msprop:Generator_ColumnPropNameInTable="HoraRecepcionColumn" msprop:Generator_UserColumnName="HoraRecepcion" type="xs:dateTime" />
-              <xs:element name="HoraComienzoConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraComienzoConsulta" msprop:Generator_ColumnPropNameInRow="HoraComienzoConsulta" msprop:Generator_ColumnPropNameInTable="HoraComienzoConsultaColumn" msprop:Generator_UserColumnName="HoraComienzoConsulta" type="xs:dateTime" />
-              <xs:element name="HoraFinalConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraFinalConsulta" msprop:Generator_ColumnPropNameInRow="HoraFinalConsulta" msprop:Generator_ColumnPropNameInTable="HoraFinalConsultaColumn" msprop:Generator_UserColumnName="HoraFinalConsulta" type="xs:dateTime" />
-              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="20" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="IdDerivado" msprop:Generator_ColumnVarNameInTable="columnIdDerivado" msprop:Generator_ColumnPropNameInRow="IdDerivado" msprop:Generator_ColumnPropNameInTable="IdDerivadoColumn" msprop:Generator_UserColumnName="IdDerivado" type="xs:long" />
-              <xs:element name="Indicaciones" msprop:Generator_ColumnVarNameInTable="columnIndicaciones" msprop:Generator_ColumnPropNameInRow="Indicaciones" msprop:Generator_ColumnPropNameInTable="IndicacionesColumn" msprop:Generator_UserColumnName="Indicaciones">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="DiagnosticoFinal" msprop:Generator_ColumnVarNameInTable="columnDiagnosticoFinal" msprop:Generator_ColumnPropNameInRow="DiagnosticoFinal" msprop:Generator_ColumnPropNameInTable="DiagnosticoFinalColumn" msprop:Generator_UserColumnName="DiagnosticoFinal" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="CIE10" msprop:Generator_ColumnVarNameInTable="columnCIE10" msprop:Generator_ColumnPropNameInRow="CIE10" msprop:Generator_ColumnPropNameInTable="CIE10Column" msprop:Generator_UserColumnName="CIE10" type="xs:long" minOccurs="0" />
-              <xs:element name="ControlEmbarazo" msprop:Generator_ColumnVarNameInTable="columnControlEmbarazo" msprop:Generator_ColumnPropNameInRow="ControlEmbarazo" msprop:Generator_ColumnPropNameInTable="ControlEmbarazoColumn" msprop:Generator_UserColumnName="ControlEmbarazo" type="xs:boolean" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -1130,87 +1098,259 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Select_AlergiasByIdPaciente" msprop:Generator_TableClassName="Select_AlergiasByIdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_AlergiasByIdPaciente" msprop:Generator_RowChangedName="Select_AlergiasByIdPacienteRowChanged" msprop:Generator_TablePropName="Select_AlergiasByIdPaciente" msprop:Generator_RowDeletingName="Select_AlergiasByIdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_AlergiasByIdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_AlergiasByIdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_AlergiasByIdPacienteRowDeleted" msprop:Generator_RowClassName="Select_AlergiasByIdPacienteRow" msprop:Generator_UserTableName="Select_AlergiasByIdPaciente" msprop:Generator_RowEvArgName="Select_AlergiasByIdPacienteRowChangeEvent">
+        <xs:element name="Select_Paciente_By_GUI" msprop:Generator_TableClassName="Select_Paciente_By_GUIDataTable" msprop:Generator_TableVarName="tableSelect_Paciente_By_GUI" msprop:Generator_TablePropName="Select_Paciente_By_GUI" msprop:Generator_RowDeletingName="Select_Paciente_By_GUIRowDeleting" msprop:Generator_RowChangingName="Select_Paciente_By_GUIRowChanging" msprop:Generator_RowEvHandlerName="Select_Paciente_By_GUIRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_Paciente_By_GUIRowDeleted" msprop:Generator_UserTableName="Select_Paciente_By_GUI" msprop:Generator_RowChangedName="Select_Paciente_By_GUIRowChanged" msprop:Generator_RowEvArgName="Select_Paciente_By_GUIRowChangeEvent" msprop:Generator_RowClassName="Select_Paciente_By_GUIRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
-              <xs:element name="Alergia" msprop:Generator_ColumnVarNameInTable="columnAlergia" msprop:Generator_ColumnPropNameInRow="Alergia" msprop:Generator_ColumnPropNameInTable="AlergiaColumn" msprop:Generator_UserColumnName="Alergia">
+              <xs:element name="GUID" msprop:Generator_ColumnVarNameInTable="columnGUID" msprop:Generator_ColumnPropNameInRow="GUID" msprop:Generator_ColumnPropNameInTable="GUIDColumn" msprop:Generator_UserColumnName="GUID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido" msprop:Generator_ColumnVarNameInTable="columnApellido" msprop:Generator_ColumnPropNameInRow="Apellido" msprop:Generator_ColumnPropNameInTable="ApellidoColumn" msprop:Generator_UserColumnName="Apellido">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNacimiento" msprop:Generator_ColumnVarNameInTable="columnFechaNacimiento" msprop:Generator_ColumnPropNameInRow="FechaNacimiento" msprop:Generator_ColumnPropNameInTable="FechaNacimientoColumn" msprop:Generator_UserColumnName="FechaNacimiento" type="xs:dateTime" />
+              <xs:element name="NroDocumento" msprop:Generator_ColumnVarNameInTable="columnNroDocumento" msprop:Generator_ColumnPropNameInRow="NroDocumento" msprop:Generator_ColumnPropNameInTable="NroDocumentoColumn" msprop:Generator_UserColumnName="NroDocumento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Domicilio" msprop:Generator_ColumnVarNameInTable="columnDomicilio" msprop:Generator_ColumnPropNameInRow="Domicilio" msprop:Generator_ColumnPropNameInTable="DomicilioColumn" msprop:Generator_UserColumnName="Domicilio">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_CirugiasByIdPaciente" msprop:Generator_TableClassName="Select_CirugiasByIdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_CirugiasByIdPaciente" msprop:Generator_TablePropName="Select_CirugiasByIdPaciente" msprop:Generator_RowDeletingName="Select_CirugiasByIdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_CirugiasByIdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_CirugiasByIdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_CirugiasByIdPacienteRowDeleted" msprop:Generator_UserTableName="Select_CirugiasByIdPaciente" msprop:Generator_RowChangedName="Select_CirugiasByIdPacienteRowChanged" msprop:Generator_RowEvArgName="Select_CirugiasByIdPacienteRowChangeEvent" msprop:Generator_RowClassName="Select_CirugiasByIdPacienteRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
-              <xs:element name="Cirugia" msprop:Generator_ColumnVarNameInTable="columnCirugia" msprop:Generator_ColumnPropNameInRow="Cirugia" msprop:Generator_ColumnPropNameInTable="CirugiaColumn" msprop:Generator_UserColumnName="Cirugia">
+              <xs:element name="Localidad" msprop:Generator_ColumnVarNameInTable="columnLocalidad" msprop:Generator_ColumnPropNameInRow="Localidad" msprop:Generator_ColumnPropNameInTable="LocalidadColumn" msprop:Generator_UserColumnName="Localidad">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_APF" msprop:Generator_TableClassName="Select_APFDataTable" msprop:Generator_TableVarName="tableSelect_APF" msprop:Generator_RowChangedName="Select_APFRowChanged" msprop:Generator_TablePropName="Select_APF" msprop:Generator_RowDeletingName="Select_APFRowDeleting" msprop:Generator_RowChangingName="Select_APFRowChanging" msprop:Generator_RowEvHandlerName="Select_APFRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_APFRowDeleted" msprop:Generator_RowClassName="Select_APFRow" msprop:Generator_UserTableName="Select_APF" msprop:Generator_RowEvArgName="Select_APFRowChangeEvent">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
-              <xs:element name="Patologia" msprop:Generator_ColumnVarNameInTable="columnPatologia" msprop:Generator_ColumnPropNameInRow="Patologia" msprop:Generator_ColumnPropNameInTable="PatologiaColumn" msprop:Generator_UserColumnName="Patologia">
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdObraSocial" msprop:Generator_ColumnVarNameInTable="columnIdObraSocial" msprop:Generator_ColumnPropNameInRow="IdObraSocial" msprop:Generator_ColumnPropNameInTable="IdObraSocialColumn" msprop:Generator_UserColumnName="IdObraSocial" type="xs:long" />
+              <xs:element name="NroObraSocial" msprop:Generator_ColumnVarNameInTable="columnNroObraSocial" msprop:Generator_ColumnPropNameInRow="NroObraSocial" msprop:Generator_ColumnPropNameInTable="NroObraSocialColumn" msprop:Generator_UserColumnName="NroObraSocial">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="Select_APP" msprop:Generator_TableClassName="Select_APPDataTable" msprop:Generator_TableVarName="tableSelect_APP" msprop:Generator_RowChangedName="Select_APPRowChanged" msprop:Generator_TablePropName="Select_APP" msprop:Generator_RowDeletingName="Select_APPRowDeleting" msprop:Generator_RowChangingName="Select_APPRowChanging" msprop:Generator_RowEvHandlerName="Select_APPRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_APPRowDeleted" msprop:Generator_RowClassName="Select_APPRow" msprop:Generator_UserTableName="Select_APP" msprop:Generator_RowEvArgName="Select_APPRowChangeEvent">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
-              <xs:element name="Patologia" msprop:Generator_ColumnVarNameInTable="columnPatologia" msprop:Generator_ColumnPropNameInRow="Patologia" msprop:Generator_ColumnPropNameInTable="PatologiaColumn" msprop:Generator_UserColumnName="Patologia">
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
+                    <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Select_MedicacionHabitual" msprop:Generator_TableClassName="Select_MedicacionHabitualDataTable" msprop:Generator_TableVarName="tableSelect_MedicacionHabitual" msprop:Generator_TablePropName="Select_MedicacionHabitual" msprop:Generator_RowDeletingName="Select_MedicacionHabitualRowDeleting" msprop:Generator_RowChangingName="Select_MedicacionHabitualRowChanging" msprop:Generator_RowEvHandlerName="Select_MedicacionHabitualRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_MedicacionHabitualRowDeleted" msprop:Generator_UserTableName="Select_MedicacionHabitual" msprop:Generator_RowChangedName="Select_MedicacionHabitualRowChanged" msprop:Generator_RowEvArgName="Select_MedicacionHabitualRowChangeEvent" msprop:Generator_RowClassName="Select_MedicacionHabitualRow">
+        <xs:element name="Select_PacienteByID" msprop:Generator_TableClassName="Select_PacienteByIDDataTable" msprop:Generator_TableVarName="tableSelect_PacienteByID" msprop:Generator_TablePropName="Select_PacienteByID" msprop:Generator_RowDeletingName="Select_PacienteByIDRowDeleting" msprop:Generator_RowChangingName="Select_PacienteByIDRowChanging" msprop:Generator_RowEvHandlerName="Select_PacienteByIDRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_PacienteByIDRowDeleted" msprop:Generator_UserTableName="Select_PacienteByID" msprop:Generator_RowChangedName="Select_PacienteByIDRowChanged" msprop:Generator_RowEvArgName="Select_PacienteByIDRowChangeEvent" msprop:Generator_RowClassName="Select_PacienteByIDRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
-              <xs:element name="IdPaciente" msprop:Generator_ColumnVarNameInTable="columnIdPaciente" msprop:Generator_ColumnPropNameInRow="IdPaciente" msprop:Generator_ColumnPropNameInTable="IdPacienteColumn" msprop:Generator_UserColumnName="IdPaciente" type="xs:long" />
-              <xs:element name="Medicacion" msprop:Generator_ColumnVarNameInTable="columnMedicacion" msprop:Generator_ColumnPropNameInRow="Medicacion" msprop:Generator_ColumnPropNameInTable="MedicacionColumn" msprop:Generator_UserColumnName="Medicacion">
+              <xs:element name="GUID" msprop:Generator_ColumnVarNameInTable="columnGUID" msprop:Generator_ColumnPropNameInRow="GUID" msprop:Generator_ColumnPropNameInTable="GUIDColumn" msprop:Generator_UserColumnName="GUID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido" msprop:Generator_ColumnVarNameInTable="columnApellido" msprop:Generator_ColumnPropNameInRow="Apellido" msprop:Generator_ColumnPropNameInTable="ApellidoColumn" msprop:Generator_UserColumnName="Apellido">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNacimiento" msprop:Generator_ColumnVarNameInTable="columnFechaNacimiento" msprop:Generator_ColumnPropNameInRow="FechaNacimiento" msprop:Generator_ColumnPropNameInTable="FechaNacimientoColumn" msprop:Generator_UserColumnName="FechaNacimiento" type="xs:dateTime" />
+              <xs:element name="NroDocumento" msprop:Generator_ColumnVarNameInTable="columnNroDocumento" msprop:Generator_ColumnPropNameInRow="NroDocumento" msprop:Generator_ColumnPropNameInTable="NroDocumentoColumn" msprop:Generator_UserColumnName="NroDocumento">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Domicilio" msprop:Generator_ColumnVarNameInTable="columnDomicilio" msprop:Generator_ColumnPropNameInRow="Domicilio" msprop:Generator_ColumnPropNameInTable="DomicilioColumn" msprop:Generator_UserColumnName="Domicilio">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="Localidad" msprop:Generator_ColumnVarNameInTable="columnLocalidad" msprop:Generator_ColumnPropNameInRow="Localidad" msprop:Generator_ColumnPropNameInTable="LocalidadColumn" msprop:Generator_UserColumnName="Localidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdObraSocial" msprop:Generator_ColumnVarNameInTable="columnIdObraSocial" msprop:Generator_ColumnPropNameInRow="IdObraSocial" msprop:Generator_ColumnPropNameInTable="IdObraSocialColumn" msprop:Generator_UserColumnName="IdObraSocial" type="xs:long" />
+              <xs:element name="NroObraSocial" msprop:Generator_ColumnVarNameInTable="columnNroObraSocial" msprop:Generator_ColumnPropNameInRow="NroObraSocial" msprop:Generator_ColumnPropNameInTable="NroObraSocialColumn" msprop:Generator_UserColumnName="NroObraSocial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+        <xs:element name="Select_TurnoById" msprop:Generator_TableClassName="Select_TurnoByIdDataTable" msprop:Generator_TableVarName="tableSelect_TurnoById" msprop:Generator_TablePropName="Select_TurnoById" msprop:Generator_RowDeletingName="Select_TurnoByIdRowDeleting" msprop:Generator_RowChangingName="Select_TurnoByIdRowChanging" msprop:Generator_RowEvHandlerName="Select_TurnoByIdRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_TurnoByIdRowDeleted" msprop:Generator_UserTableName="Select_TurnoById" msprop:Generator_RowChangedName="Select_TurnoByIdRowChanged" msprop:Generator_RowEvArgName="Select_TurnoByIdRowChangeEvent" msprop:Generator_RowClassName="Select_TurnoByIdRow">
           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:long" />
+              <xs:element name="PacienteId" msprop:Generator_ColumnVarNameInTable="columnPacienteId" msprop:Generator_ColumnPropNameInRow="PacienteId" msprop:Generator_ColumnPropNameInTable="PacienteIdColumn" msprop:Generator_UserColumnName="PacienteId" type="xs:long" />
+              <xs:element name="HoraRecepcion" msprop:Generator_ColumnVarNameInTable="columnHoraRecepcion" msprop:Generator_ColumnPropNameInRow="HoraRecepcion" msprop:Generator_ColumnPropNameInTable="HoraRecepcionColumn" msprop:Generator_UserColumnName="HoraRecepcion" type="xs:dateTime" />
+              <xs:element name="HoraComienzoConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraComienzoConsulta" msprop:Generator_ColumnPropNameInRow="HoraComienzoConsulta" msprop:Generator_ColumnPropNameInTable="HoraComienzoConsultaColumn" msprop:Generator_UserColumnName="HoraComienzoConsulta" type="xs:dateTime" />
+              <xs:element name="HoraFinalConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraFinalConsulta" msprop:Generator_ColumnPropNameInRow="HoraFinalConsulta" msprop:Generator_ColumnPropNameInTable="HoraFinalConsultaColumn" msprop:Generator_UserColumnName="HoraFinalConsulta" type="xs:dateTime" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdDerivado" msprop:Generator_ColumnVarNameInTable="columnIdDerivado" msprop:Generator_ColumnPropNameInRow="IdDerivado" msprop:Generator_ColumnPropNameInTable="IdDerivadoColumn" msprop:Generator_UserColumnName="IdDerivado" type="xs:long" />
+              <xs:element name="Indicaciones" msprop:Generator_ColumnVarNameInTable="columnIndicaciones" msprop:Generator_ColumnPropNameInRow="Indicaciones" msprop:Generator_ColumnPropNameInTable="IndicacionesColumn" msprop:Generator_UserColumnName="Indicaciones">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiagnosticoFinal" msprop:Generator_ColumnVarNameInTable="columnDiagnosticoFinal" msprop:Generator_ColumnPropNameInRow="DiagnosticoFinal" msprop:Generator_ColumnPropNameInTable="DiagnosticoFinalColumn" msprop:Generator_UserColumnName="DiagnosticoFinal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIE10" msprop:Generator_ColumnVarNameInTable="columnCIE10" msprop:Generator_ColumnPropNameInRow="CIE10" msprop:Generator_ColumnPropNameInTable="CIE10Column" msprop:Generator_UserColumnName="CIE10" type="xs:long" minOccurs="0" />
+              <xs:element name="ControlEmbarazo" msprop:Generator_ColumnVarNameInTable="columnControlEmbarazo" msprop:Generator_ColumnPropNameInRow="ControlEmbarazo" msprop:Generator_ColumnPropNameInTable="ControlEmbarazoColumn" msprop:Generator_UserColumnName="ControlEmbarazo" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+        <xs:element name="Select_Turnos_By_Period" msprop:Generator_TableClassName="Select_Turnos_By_PeriodDataTable" msprop:Generator_TableVarName="tableSelect_Turnos_By_Period" msprop:Generator_TablePropName="Select_Turnos_By_Period" msprop:Generator_RowDeletingName="Select_Turnos_By_PeriodRowDeleting" msprop:Generator_RowChangingName="Select_Turnos_By_PeriodRowChanging" msprop:Generator_RowEvHandlerName="Select_Turnos_By_PeriodRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_Turnos_By_PeriodRowDeleted" msprop:Generator_UserTableName="Select_Turnos_By_Period" msprop:Generator_RowChangedName="Select_Turnos_By_PeriodRowChanged" msprop:Generator_RowEvArgName="Select_Turnos_By_PeriodRowChangeEvent" msprop:Generator_RowClassName="Select_Turnos_By_PeriodRow">
           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:long" />
+              <xs:element name="PacienteId" msprop:Generator_ColumnVarNameInTable="columnPacienteId" msprop:Generator_ColumnPropNameInRow="PacienteId" msprop:Generator_ColumnPropNameInTable="PacienteIdColumn" msprop:Generator_UserColumnName="PacienteId" type="xs:long" />
+              <xs:element name="HoraRecepcion" msprop:Generator_ColumnVarNameInTable="columnHoraRecepcion" msprop:Generator_ColumnPropNameInRow="HoraRecepcion" msprop:Generator_ColumnPropNameInTable="HoraRecepcionColumn" msprop:Generator_UserColumnName="HoraRecepcion" type="xs:dateTime" />
+              <xs:element name="HoraComienzoConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraComienzoConsulta" msprop:Generator_ColumnPropNameInRow="HoraComienzoConsulta" msprop:Generator_ColumnPropNameInTable="HoraComienzoConsultaColumn" msprop:Generator_UserColumnName="HoraComienzoConsulta" type="xs:dateTime" />
+              <xs:element name="HoraFinalConsulta" msprop:Generator_ColumnVarNameInTable="columnHoraFinalConsulta" msprop:Generator_ColumnPropNameInRow="HoraFinalConsulta" msprop:Generator_ColumnPropNameInTable="HoraFinalConsultaColumn" msprop:Generator_UserColumnName="HoraFinalConsulta" type="xs:dateTime" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdDerivado" msprop:Generator_ColumnVarNameInTable="columnIdDerivado" msprop:Generator_ColumnPropNameInRow="IdDerivado" msprop:Generator_ColumnPropNameInTable="IdDerivadoColumn" msprop:Generator_UserColumnName="IdDerivado" type="xs:long" />
+              <xs:element name="Indicaciones" msprop:Generator_ColumnVarNameInTable="columnIndicaciones" msprop:Generator_ColumnPropNameInRow="Indicaciones" msprop:Generator_ColumnPropNameInTable="IndicacionesColumn" msprop:Generator_UserColumnName="Indicaciones">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiagnosticoFinal" msprop:Generator_ColumnVarNameInTable="columnDiagnosticoFinal" msprop:Generator_ColumnPropNameInRow="DiagnosticoFinal" msprop:Generator_ColumnPropNameInTable="DiagnosticoFinalColumn" msprop:Generator_UserColumnName="DiagnosticoFinal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIE10" msprop:Generator_ColumnVarNameInTable="columnCIE10" msprop:Generator_ColumnPropNameInRow="CIE10" msprop:Generator_ColumnPropNameInTable="CIE10Column" msprop:Generator_UserColumnName="CIE10" type="xs:long" minOccurs="0" />
+              <xs:element name="ControlEmbarazo" msprop:Generator_ColumnVarNameInTable="columnControlEmbarazo" msprop:Generator_ColumnPropNameInRow="ControlEmbarazo" msprop:Generator_ColumnPropNameInTable="ControlEmbarazoColumn" msprop:Generator_UserColumnName="ControlEmbarazo" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_DientesByKeyOdontograma" msprop:Generator_TableClassName="Select_DientesByKeyOdontogramaDataTable" msprop:Generator_TableVarName="tableSelect_DientesByKeyOdontograma" msprop:Generator_TablePropName="Select_DientesByKeyOdontograma" msprop:Generator_RowDeletingName="Select_DientesByKeyOdontogramaRowDeleting" msprop:Generator_RowChangingName="Select_DientesByKeyOdontogramaRowChanging" msprop:Generator_RowEvHandlerName="Select_DientesByKeyOdontogramaRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_DientesByKeyOdontogramaRowDeleted" msprop:Generator_UserTableName="Select_DientesByKeyOdontograma" msprop:Generator_RowChangedName="Select_DientesByKeyOdontogramaRowChanged" msprop:Generator_RowEvArgName="Select_DientesByKeyOdontogramaRowChangeEvent" msprop:Generator_RowClassName="Select_DientesByKeyOdontogramaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="OdontogramaID" msprop:Generator_ColumnVarNameInTable="columnOdontogramaID" msprop:Generator_ColumnPropNameInRow="OdontogramaID" msprop:Generator_ColumnPropNameInTable="OdontogramaIDColumn" msprop:Generator_UserColumnName="OdontogramaID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DienteID" msprop:Generator_ColumnVarNameInTable="columnDienteID" msprop:Generator_ColumnPropNameInRow="DienteID" msprop:Generator_ColumnPropNameInTable="DienteIDColumn" msprop:Generator_UserColumnName="DienteID" type="xs:long" />
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Select_OdontogramasByIdPaciente" msprop:Generator_TableClassName="Select_OdontogramasByIdPacienteDataTable" msprop:Generator_TableVarName="tableSelect_OdontogramasByIdPaciente" msprop:Generator_TablePropName="Select_OdontogramasByIdPaciente" msprop:Generator_RowDeletingName="Select_OdontogramasByIdPacienteRowDeleting" msprop:Generator_RowChangingName="Select_OdontogramasByIdPacienteRowChanging" msprop:Generator_RowEvHandlerName="Select_OdontogramasByIdPacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Select_OdontogramasByIdPacienteRowDeleted" msprop:Generator_UserTableName="Select_OdontogramasByIdPaciente" msprop:Generator_RowChangedName="Select_OdontogramasByIdPacienteRowChanged" msprop:Generator_RowEvArgName="Select_OdontogramasByIdPacienteRowChangeEvent" msprop:Generator_RowClassName="Select_OdontogramasByIdPacienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" />
+              <xs:element name="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" msprop:Generator_UserColumnName="UserId" type="xs:long" />
+              <xs:element name="PacienteId" msprop:Generator_ColumnVarNameInTable="columnPacienteId" msprop:Generator_ColumnPropNameInRow="PacienteId" msprop:Generator_ColumnPropNameInTable="PacienteIdColumn" msprop:Generator_UserColumnName="PacienteId" type="xs:long" />
+              <xs:element name="UID" msprop:Generator_ColumnVarNameInTable="columnUID" msprop:Generator_ColumnPropNameInRow="UID" msprop:Generator_ColumnPropNameInTable="UIDColumn" msprop:Generator_UserColumnName="UID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" />
+            </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
@@ -1227,20 +1367,48 @@
       <xs:selector xpath=".//mstns:INSERT_DIAGNOSTICO" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
+    <xs:unique name="InsertOdontograma_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:InsertOdontograma" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
     <xs:unique name="Search_ObrasSocial_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Search_ObrasSocial" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Select_AlergiasByIdPaciente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_AlergiasByIdPaciente" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
     <xs:unique name="Select_AllTurnosByIdUser_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Select_AllTurnosByIdUser" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
+    <xs:unique name="Select_APF_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_APF" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Select_APP_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_APP" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Select_CirugiasByIdPaciente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_CirugiasByIdPaciente" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
     <xs:unique name="Select_Diagnosticos_By_IdPaciente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Select_Diagnosticos_By_IdPaciente" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
+    <xs:unique name="Select_MedicacionHabitual_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_MedicacionHabitual" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
     <xs:unique name="Select_ObraSocial_By_ID_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Select_ObraSocial_By_ID" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="SELECT_PACIENTE_BY_DNI_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SELECT_PACIENTE_BY_DNI" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
     <xs:unique name="Select_Paciente_By_GUI_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
@@ -1259,28 +1427,12 @@
       <xs:selector xpath=".//mstns:Select_Turnos_By_Period" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
-    <xs:unique name="SELECT_PACIENTE_BY_DNI_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:SELECT_PACIENTE_BY_DNI" />
+    <xs:unique name="Select_DientesByKeyOdontograma_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_DientesByKeyOdontograma" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
-    <xs:unique name="Select_AlergiasByIdPaciente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Select_AlergiasByIdPaciente" />
-      <xs:field xpath="mstns:Id" />
-    </xs:unique>
-    <xs:unique name="Select_CirugiasByIdPaciente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Select_CirugiasByIdPaciente" />
-      <xs:field xpath="mstns:Id" />
-    </xs:unique>
-    <xs:unique name="Select_APF_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Select_APF" />
-      <xs:field xpath="mstns:Id" />
-    </xs:unique>
-    <xs:unique name="Select_APP_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Select_APP" />
-      <xs:field xpath="mstns:Id" />
-    </xs:unique>
-    <xs:unique name="Select_MedicacionHabitual_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Select_MedicacionHabitual" />
+    <xs:unique name="Select_OdontogramasByIdPaciente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Select_OdontogramasByIdPaciente" />
       <xs:field xpath="mstns:Id" />
     </xs:unique>
   </xs:element>

@@ -102,20 +102,42 @@ namespace ConnectionDispensario.Modelos
 
         public List<Historial> Get_Historial() 
         {
+            List<Historial> t_L = new List<Historial>();
             Conexiones.Con_Historial CH = new Conexiones.Con_Historial();
             DataTable DT =  CH.Select_Diagnosticos_By_IdPaciente(ID);
+             List<Odontograma> LO = Modelos.Odontograma.Get_OdontogramasByIdPaciente(ID);
+
+            if (LO != null)
+            {
+                foreach (Odontograma O in LO)
+                {
+                    t_L.Add(new Historial(O));
+                    t_L = t_L.OrderBy(x => x.FECHA).ToList();
+                }
+            }
+
             if (DT != null) 
             {
-                List<Historial> t_L = new List<Historial>();
+                
                 foreach (DataRow DR in DT.Rows) 
                 {
                     t_L.Add(new Historial(DR));
                 }
+
+                t_L = t_L.OrderBy(x => x.FECHA).ToList();
+
+                
+            }
+
+            if (t_L.Count > 0)
+            {
                 return t_L;
-            } else 
+            }
+            else
             {
                 return null;
             }
+
         }
 
         public bool Guardar()

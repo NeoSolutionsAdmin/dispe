@@ -372,26 +372,30 @@
     float:left;
     
     background-color:#bab9b9;
-    height:10px;
-    width:10px;
-    font-size:10px; 
+    height:20px;
+    width:20px;
+    font-size:15px; 
     vertical-align:middle; 
     text-align:center; 
-    line-height:10px;
+    line-height:20px;
     z-index:1000;
     position:relative;
+    margin-bottom:2px;
+    
+
 
     
 }
 
     .MiniButton:hover {
-        height:15px;
-        width:15px;
+        height:25px;
+        width:25px;
         font-size:15px;
-        line-height:15px;
+        line-height:25px;
         margin-right:-5px;
         margin-bottom:-5px;
         z-index:1001;
+        background-color:lightgray;
     }
 
 .MiniButtonBlue {
@@ -421,4 +425,32 @@
 
 .DispensarioTinyTXT {
     max-width: 30px;
+}
+.classmedico {
+    background-color:#2b6f92;
+    color:white;
+}
+.classenfermero {
+    background-color: #8a57ad;
+    color: white;
+}
+.classmedicoprofesional {
+    background-color: #2b6f92;
+    color: white;
+}
+.classenfermeroprofesional {
+    background-color: #8a57ad;
+    color: white;
+}
+.classneutral {
+    background-color: #5e5209;
+    color: white;
+}
+
+.HistorialEditor {
+    background: #e1ffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=0 ); /* IE6-9 */
 }

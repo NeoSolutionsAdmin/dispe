@@ -12,7 +12,7 @@ namespace ConnectionDispensario.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,8 +26,8 @@ namespace ConnectionDispensario.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=IRMA-PC\\SQLCLOVERFIELD;Initial Catalog=DispensarioAC;User ID=sa;Passw" +
-            "ord=cloverfield161185")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DEIVIT-PC\\SQLCLOVERFIELD;Initial Catalog=SistemaDispensario;User ID=s" +
+            "a;Password=cloverfield161185")]
         public string DispensarioACConnectionString {
             get {
                 return ((string)(this["DispensarioACConnectionString"]));

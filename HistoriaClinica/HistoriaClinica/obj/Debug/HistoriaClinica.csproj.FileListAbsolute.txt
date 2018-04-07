@@ -1,5 +1,7 @@
-C:\Dispensario Arroyo Cabral\bin\HistoriaClinica.dll
-C:\Dispensario Arroyo Cabral\bin\HistoriaClinica.pdb
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.csprojResolveAssemblyReference.cache
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.dll
-C:\Dispensario Arroyo Cabral\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.pdb
+D:\DNNDispensario\bin\HistoriaClinica.dll.config
+D:\DNNDispensario\bin\HistoriaClinica.dll
+D:\DNNDispensario\bin\HistoriaClinica.pdb
+D:\DNNDispensario\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.csprojResolveAssemblyReference.cache
+D:\DNNDispensario\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.csproj.CoreCompileInputs.cache
+D:\DNNDispensario\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.dll
+D:\DNNDispensario\DesktopModules\Dispensario\HistoriaClinica\HistoriaClinica\obj\Debug\HistoriaClinica.pdb
